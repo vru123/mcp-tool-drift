@@ -1,0 +1,220 @@
+{
+ "window_start": "2025-04-01",
+ "servers": [
+  {
+   "id": "filesystem",
+   "group": "Official reference",
+   "registry": "npm",
+   "pkg": "@modelcontextprotocol/server-filesystem",
+   "args": [
+    "/tmp/mcpsandbox"
+   ]
+  },
+  {
+   "id": "memory",
+   "group": "Official reference",
+   "registry": "npm",
+   "pkg": "@modelcontextprotocol/server-memory",
+   "env": {
+    "MEMORY_FILE_PATH": "/tmp/mcpsandbox/memory.json"
+   }
+  },
+  {
+   "id": "everything",
+   "group": "Official reference",
+   "registry": "npm",
+   "pkg": "@modelcontextprotocol/server-everything",
+   "args": [
+    "stdio"
+   ]
+  },
+  {
+   "id": "sequential-thinking",
+   "group": "Official reference",
+   "registry": "npm",
+   "pkg": "@modelcontextprotocol/server-sequential-thinking"
+  },
+  {
+   "id": "fetch",
+   "group": "Official reference",
+   "registry": "pypi",
+   "pkg": "mcp-server-fetch"
+  },
+  {
+   "id": "git",
+   "group": "Official reference",
+   "registry": "pypi",
+   "pkg": "mcp-server-git",
+   "args": [
+    "--repository",
+    "/tmp/mcpsandbox/repo"
+   ]
+  },
+  {
+   "id": "time",
+   "group": "Official reference",
+   "registry": "pypi",
+   "pkg": "mcp-server-time",
+   "args": [
+    "--local-timezone",
+    "UTC"
+   ]
+  },
+  {
+   "id": "azure",
+   "group": "Data and cloud",
+   "registry": "npm",
+   "pkg": "@azure/mcp",
+   "args": [
+    "server",
+    "start"
+   ],
+   "env": {
+    "AZURE_TENANT_ID": "00000000-0000-0000-0000-000000000000",
+    "AZURE_CLIENT_ID": "00000000-0000-0000-0000-000000000000",
+    "AZURE_CLIENT_SECRET": "dummy"
+   }
+  },
+  {
+   "id": "supabase",
+   "group": "Data and cloud",
+   "registry": "npm",
+   "pkg": "@supabase/mcp-server-supabase",
+   "args": [
+    "--access-token",
+    "sbp_dummy0000000000000000000000000000000000"
+   ],
+   "env": {
+    "SUPABASE_ACCESS_TOKEN": "sbp_dummy0000000000000000000000000000000000"
+   },
+   "node_preload": "scripts/mock_supabase_content_api.cjs"
+  },
+  {
+   "id": "kubernetes",
+   "group": "Data and cloud",
+   "registry": "npm",
+   "pkg": "mcp-server-kubernetes",
+   "env": {
+    "KUBECONFIG": "/tmp/mcpsandbox/kubeconfig"
+   }
+  },
+  {
+   "id": "notion",
+   "group": "Work and business",
+   "registry": "npm",
+   "pkg": "@notionhq/notion-mcp-server",
+   "env": {
+    "NOTION_TOKEN": "ntn_dummy",
+    "OPENAPI_MCP_HEADERS": "{\"Authorization\":\"Bearer ntn_dummy\",\"Notion-Version\":\"2022-06-28\"}"
+   }
+  },
+  {
+   "id": "hubspot",
+   "group": "Work and business",
+   "registry": "npm",
+   "pkg": "@hubspot/mcp-server",
+   "env": {
+    "PRIVATE_APP_ACCESS_TOKEN": "pat-na1-dummy",
+    "HUBSPOT_ACCESS_TOKEN": "pat-na1-dummy"
+   }
+  },
+  {
+   "id": "stripe",
+   "group": "Work and business",
+   "registry": "npm",
+   "pkg": "@stripe/mcp",
+   "args": [
+    "--tools=all",
+    "--api-key=sk_test_dummy000000000000000000"
+   ],
+   "env": {
+    "STRIPE_SECRET_KEY": "sk_test_dummy000000000000000000"
+   }
+  },
+  {
+   "id": "figma",
+   "group": "Work and business",
+   "registry": "npm",
+   "pkg": "figma-developer-mcp",
+   "args": [
+    "--stdio",
+    "--figma-api-key=figd_dummy"
+   ],
+   "env": {
+    "FIGMA_API_KEY": "figd_dummy"
+   }
+  },
+  {
+   "id": "sentry",
+   "group": "Work and business",
+   "registry": "npm",
+   "pkg": "@sentry/mcp-server",
+   "args": [
+    "--access-token=sntrys_dummy"
+   ],
+   "env": {
+    "SENTRY_ACCESS_TOKEN": "sntrys_dummy"
+   }
+  },
+  {
+   "id": "heroku",
+   "group": "Work and business",
+   "registry": "npm",
+   "pkg": "@heroku/mcp-server",
+   "env": {
+    "HEROKU_API_KEY": "00000000-0000-0000-0000-000000000000"
+   }
+  },
+  {
+   "id": "playwright",
+   "group": "Agents and browsing",
+   "registry": "npm",
+   "pkg": "@playwright/mcp",
+   "args": [
+    "--headless"
+   ]
+  },
+  {
+   "id": "firecrawl",
+   "group": "Agents and browsing",
+   "registry": "npm",
+   "pkg": "firecrawl-mcp",
+   "env": {
+    "FIRECRAWL_API_KEY": "fc-dummy"
+   }
+  },
+  {
+   "id": "browserbase",
+   "group": "Agents and browsing",
+   "registry": "npm",
+   "pkg": "@browserbasehq/mcp-server-browserbase",
+   "env": {
+    "BROWSERBASE_API_KEY": "bb_dummy",
+    "BROWSERBASE_PROJECT_ID": "dummy",
+    "GEMINI_API_KEY": "dummy",
+    "ANTHROPIC_API_KEY": "dummy",
+    "OPENAI_API_KEY": "dummy"
+   }
+  },
+  {
+   "id": "context7",
+   "group": "Agents and browsing",
+   "registry": "npm",
+   "pkg": "@upstash/context7-mcp"
+  }
+ ],
+ "excluded": [
+  {
+   "pkg": "@cloudflare/mcp-server-cloudflare",
+   "reason": "No releases in window"
+  },
+  {
+   "pkg": "snowflake-labs-mcp",
+   "reason": "Needs a real Snowflake connection config to start"
+  },
+  {
+   "pkg": "awslabs.core-mcp-server",
+   "reason": "Dependencies would not resolve under date pinning"
+  }
+ ]
+}
