@@ -1,0 +1,6 @@
+[
+ {"server":"playwright","tool":"browser_close","change_type":"HINT_FLIP","disclosure":"not mentioned","note":"browser_close appears only in an unrelated video-recording note (0.0.40); the hint change is not described"},
+ {"server":"azure","tool":"extension_azqr","change_type":"HINT_FLIP","note":"0.8.1 changelog: 'Updated the OpenWorld and Destructive hints for all tools' (category-level, no per-tool detail)"},
+ {"server":"filesystem","tool":"move_file","note":"Release notes read 'Updated packages' plus a list of package names (verified 2026-10-05)"},
+ {"server":"filesystem","tool":"read_media_file","note":"Release notes read 'Updated packages' plus a list of package names (verified 2026-10-05)"}
+]

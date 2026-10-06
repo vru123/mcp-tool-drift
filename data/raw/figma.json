@@ -1,0 +1,1370 @@
+[
+ {
+  "server": "figma",
+  "pkg": "figma-developer-mcp",
+  "registry": "npm",
+  "version": "0.1.13",
+  "published": "2025-04-02T07:44:36.451Z",
+  "pinned_before": "2025-04-04",
+  "probed_at": "2026-10-05T18:50:12.848881+00:00",
+  "installed": {
+   "resolved_version": "0.1.13"
+  },
+  "initialize": {
+   "protocolVersion": "2024-11-05",
+   "capabilities": {
+    "logging": {},
+    "tools": {}
+   },
+   "serverInfo": {
+    "name": "Figma MCP Server",
+    "version": "0.1.13"
+   }
+  },
+  "tools": [
+   {
+    "name": "get_figma_data",
+    "description": "When the nodeId cannot be obtained, obtain the layout information about the entire Figma file",
+    "inputSchema": {
+     "type": "object",
+     "properties": {
+      "fileKey": {
+       "type": "string",
+       "description": "The key of the Figma file to fetch, often found in a provided URL like figma.com/(file|design)/<fileKey>/..."
+      },
+      "nodeId": {
+       "type": "string",
+       "description": "The ID of the node to fetch, often found as URL parameter node-id=<nodeId>, always use if provided"
+      },
+      "depth": {
+       "type": "number",
+       "description": "How many levels deep to traverse the node tree, only use if explicitly requested by the user"
+      }
+     },
+     "required": [
+      "fileKey"
+     ],
+     "additionalProperties": false,
+     "$schema": "http://json-schema.org/draft-07/schema#"
+    }
+   },
+   {
+    "name": "download_figma_images",
+    "description": "Download SVG and PNG images used in a Figma file based on the IDs of image or icon nodes",
+    "inputSchema": {
+     "type": "object",
+     "properties": {
+      "fileKey": {
+       "type": "string",
+       "description": "The key of the Figma file containing the node"
+      },
+      "nodes": {
+       "type": "array",
+       "items": {
+        "type": "object",
+        "properties": {
+         "nodeId": {
+          "type": "string",
+          "description": "The ID of the Figma image node to fetch, formatted as 1234:5678"
+         },
+         "imageRef": {
+          "type": "string",
+          "description": "If a node has an imageRef fill, you must include this variable. Leave blank when downloading Vector SVG images."
+         },
+         "fileName": {
+          "type": "string",
+          "description": "The local name for saving the fetched file"
+         }
+        },
+        "required": [
+         "nodeId",
+         "fileName"
+        ],
+        "additionalProperties": false
+       },
+       "description": "The nodes to fetch as images"
+      },
+      "localPath": {
+       "type": "string",
+       "description": "The absolute path to the directory where images are stored in the project. If the directory does not exist, it will be created. The format of this path should respect the directory format of the operating system you are running on. Don't use any special character escaping in the path name either."
+      }
+     },
+     "required": [
+      "fileKey",
+      "nodes",
+      "localPath"
+     ],
+     "additionalProperties": false,
+     "$schema": "http://json-schema.org/draft-07/schema#"
+    }
+   }
+  ],
+  "pages": 1,
+  "error": null,
+  "stderr_tail": "",
+  "done": true,
+  "status": "ok"
+ },
+ {
+  "server": "figma",
+  "pkg": "figma-developer-mcp",
+  "registry": "npm",
+  "version": "0.1.17",
+  "published": "2025-04-19T22:18:38.127Z",
+  "pinned_before": "2025-04-21",
+  "probed_at": "2026-10-05T18:50:20.144506+00:00",
+  "installed": {
+   "resolved_version": "0.1.17"
+  },
+  "initialize": {
+   "protocolVersion": "2024-11-05",
+   "capabilities": {
+    "logging": {},
+    "tools": {
+     "listChanged": true
+    }
+   },
+   "serverInfo": {
+    "name": "Figma MCP Server",
+    "version": "0.1.17"
+   }
+  },
+  "tools": [
+   {
+    "name": "get_figma_data",
+    "description": "When the nodeId cannot be obtained, obtain the layout information about the entire Figma file",
+    "inputSchema": {
+     "type": "object",
+     "properties": {
+      "fileKey": {
+       "type": "string",
+       "description": "The key of the Figma file to fetch, often found in a provided URL like figma.com/(file|design)/<fileKey>/..."
+      },
+      "nodeId": {
+       "type": "string",
+       "description": "The ID of the node to fetch, often found as URL parameter node-id=<nodeId>, always use if provided"
+      },
+      "depth": {
+       "type": "number",
+       "description": "How many levels deep to traverse the node tree, only use if explicitly requested by the user"
+      }
+     },
+     "required": [
+      "fileKey"
+     ],
+     "additionalProperties": false,
+     "$schema": "http://json-schema.org/draft-07/schema#"
+    }
+   },
+   {
+    "name": "download_figma_images",
+    "description": "Download SVG and PNG images used in a Figma file based on the IDs of image or icon nodes",
+    "inputSchema": {
+     "type": "object",
+     "properties": {
+      "fileKey": {
+       "type": "string",
+       "description": "The key of the Figma file containing the node"
+      },
+      "nodes": {
+       "type": "array",
+       "items": {
+        "type": "object",
+        "properties": {
+         "nodeId": {
+          "type": "string",
+          "description": "The ID of the Figma image node to fetch, formatted as 1234:5678"
+         },
+         "imageRef": {
+          "type": "string",
+          "description": "If a node has an imageRef fill, you must include this variable. Leave blank when downloading Vector SVG images."
+         },
+         "fileName": {
+          "type": "string",
+          "description": "The local name for saving the fetched file"
+         }
+        },
+        "required": [
+         "nodeId",
+         "fileName"
+        ],
+        "additionalProperties": false
+       },
+       "description": "The nodes to fetch as images"
+      },
+      "localPath": {
+       "type": "string",
+       "description": "The absolute path to the directory where images are stored in the project. If the directory does not exist, it will be created. The format of this path should respect the directory format of the operating system you are running on. Don't use any special character escaping in the path name either."
+      }
+     },
+     "required": [
+      "fileKey",
+      "nodes",
+      "localPath"
+     ],
+     "additionalProperties": false,
+     "$schema": "http://json-schema.org/draft-07/schema#"
+    }
+   }
+  ],
+  "pages": 1,
+  "error": null,
+  "stderr_tail": "[INFO] Server connected and ready to process requests\n",
+  "done": true,
+  "status": "ok"
+ },
+ {
+  "server": "figma",
+  "pkg": "figma-developer-mcp",
+  "registry": "npm",
+  "version": "0.2.2",
+  "published": "2025-05-06T04:28:10.659Z",
+  "pinned_before": "2025-05-08",
+  "probed_at": "2026-10-05T18:50:23.713456+00:00",
+  "installed": {
+   "resolved_version": "0.2.2"
+  },
+  "initialize": {
+   "protocolVersion": "2025-03-26",
+   "capabilities": {
+    "tools": {
+     "listChanged": true
+    }
+   },
+   "serverInfo": {
+    "name": "Figma MCP Server",
+    "version": "0.2.1"
+   }
+  },
+  "tools": [
+   {
+    "name": "get_figma_data",
+    "description": "When the nodeId cannot be obtained, obtain the layout information about the entire Figma file",
+    "inputSchema": {
+     "type": "object",
+     "properties": {
+      "fileKey": {
+       "type": "string",
+       "description": "The key of the Figma file to fetch, often found in a provided URL like figma.com/(file|design)/<fileKey>/..."
+      },
+      "nodeId": {
+       "type": "string",
+       "description": "The ID of the node to fetch, often found as URL parameter node-id=<nodeId>, always use if provided"
+      },
+      "depth": {
+       "type": "number",
+       "description": "How many levels deep to traverse the node tree, only use if explicitly requested by the user"
+      }
+     },
+     "required": [
+      "fileKey"
+     ],
+     "additionalProperties": false,
+     "$schema": "http://json-schema.org/draft-07/schema#"
+    }
+   },
+   {
+    "name": "download_figma_images",
+    "description": "Download SVG and PNG images used in a Figma file based on the IDs of image or icon nodes",
+    "inputSchema": {
+     "type": "object",
+     "properties": {
+      "fileKey": {
+       "type": "string",
+       "description": "The key of the Figma file containing the node"
+      },
+      "nodes": {
+       "type": "array",
+       "items": {
+        "type": "object",
+        "properties": {
+         "nodeId": {
+          "type": "string",
+          "description": "The ID of the Figma image node to fetch, formatted as 1234:5678"
+         },
+         "imageRef": {
+          "type": "string",
+          "description": "If a node has an imageRef fill, you must include this variable. Leave blank when downloading Vector SVG images."
+         },
+         "fileName": {
+          "type": "string",
+          "description": "The local name for saving the fetched file"
+         }
+        },
+        "required": [
+         "nodeId",
+         "fileName"
+        ],
+        "additionalProperties": false
+       },
+       "description": "The nodes to fetch as images"
+      },
+      "localPath": {
+       "type": "string",
+       "description": "The absolute path to the directory where images are stored in the project. If the directory does not exist, it will be created. The format of this path should respect the directory format of the operating system you are running on. Don't use any special character escaping in the path name either."
+      }
+     },
+     "required": [
+      "fileKey",
+      "nodes",
+      "localPath"
+     ],
+     "additionalProperties": false,
+     "$schema": "http://json-schema.org/draft-07/schema#"
+    }
+   }
+  ],
+  "pages": 1,
+  "error": null,
+  "stderr_tail": "",
+  "done": true,
+  "status": "ok"
+ },
+ {
+  "server": "figma",
+  "pkg": "figma-developer-mcp",
+  "registry": "npm",
+  "version": "0.4.1",
+  "published": "2025-06-06T04:51:33.876Z",
+  "pinned_before": "2025-06-08",
+  "probed_at": "2026-10-05T18:50:27.662969+00:00",
+  "installed": {
+   "resolved_version": "0.4.1"
+  },
+  "initialize": {
+   "protocolVersion": "2025-03-26",
+   "capabilities": {
+    "tools": {
+     "listChanged": true
+    }
+   },
+   "serverInfo": {
+    "name": "Figma MCP Server",
+    "version": "0.4.1"
+   }
+  },
+  "tools": [
+   {
+    "name": "get_figma_data",
+    "description": "When the nodeId cannot be obtained, obtain the layout information about the entire Figma file",
+    "inputSchema": {
+     "type": "object",
+     "properties": {
+      "fileKey": {
+       "type": "string",
+       "description": "The key of the Figma file to fetch, often found in a provided URL like figma.com/(file|design)/<fileKey>/..."
+      },
+      "nodeId": {
+       "type": "string",
+       "description": "The ID of the node to fetch, often found as URL parameter node-id=<nodeId>, always use if provided"
+      },
+      "depth": {
+       "type": "number",
+       "description": "OPTIONAL. Do NOT use unless explicitly requested by the user. Controls how many levels deep to traverse the node tree,"
+      }
+     },
+     "required": [
+      "fileKey"
+     ],
+     "additionalProperties": false,
+     "$schema": "http://json-schema.org/draft-07/schema#"
+    }
+   },
+   {
+    "name": "download_figma_images",
+    "description": "Download SVG and PNG images used in a Figma file based on the IDs of image or icon nodes",
+    "inputSchema": {
+     "type": "object",
+     "properties": {
+      "fileKey": {
+       "type": "string",
+       "description": "The key of the Figma file containing the node"
+      },
+      "nodes": {
+       "type": "array",
+       "items": {
+        "type": "object",
+        "properties": {
+         "nodeId": {
+          "type": "string",
+          "description": "The ID of the Figma image node to fetch, formatted as 1234:5678"
+         },
+         "imageRef": {
+          "type": "string",
+          "description": "If a node has an imageRef fill, you must include this variable. Leave blank when downloading Vector SVG images."
+         },
+         "fileName": {
+          "type": "string",
+          "description": "The local name for saving the fetched file"
+         }
+        },
+        "required": [
+         "nodeId",
+         "fileName"
+        ],
+        "additionalProperties": false
+       },
+       "description": "The nodes to fetch as images"
+      },
+      "pngScale": {
+       "type": "number",
+       "exclusiveMinimum": 0,
+       "default": 2,
+       "description": "Export scale for PNG images. Optional, defaults to 2 if not specified. Affects PNG images only."
+      },
+      "localPath": {
+       "type": "string",
+       "description": "The absolute path to the directory where images are stored in the project. If the directory does not exist, it will be created. The format of this path should respect the directory format of the operating system you are running on. Don't use any special character escaping in the path name either."
+      },
+      "svgOptions": {
+       "type": "object",
+       "properties": {
+        "outlineText": {
+         "type": "boolean",
+         "default": true,
+         "description": "Whether to outline text in SVG exports. Default is true."
+        },
+        "includeId": {
+         "type": "boolean",
+         "default": false,
+         "description": "Whether to include IDs in SVG exports. Default is false."
+        },
+        "simplifyStroke": {
+         "type": "boolean",
+         "default": true,
+         "description": "Whether to simplify strokes in SVG exports. Default is true."
+        }
+       },
+       "additionalProperties": false,
+       "default": {},
+       "description": "Options for SVG export"
+      }
+     },
+     "required": [
+      "fileKey",
+      "nodes",
+      "localPath"
+     ],
+     "additionalProperties": false,
+     "$schema": "http://json-schema.org/draft-07/schema#"
+    }
+   }
+  ],
+  "pages": 1,
+  "error": null,
+  "stderr_tail": "",
+  "done": true,
+  "status": "ok"
+ },
+ {
+  "server": "figma",
+  "pkg": "figma-developer-mcp",
+  "registry": "npm",
+  "version": "0.5.1",
+  "published": "2025-08-13T15:21:10.130Z",
+  "pinned_before": "2025-08-15",
+  "probed_at": "2026-10-05T18:50:32.185009+00:00",
+  "installed": {
+   "resolved_version": "0.5.1"
+  },
+  "initialize": {
+   "protocolVersion": "2025-06-18",
+   "capabilities": {
+    "tools": {
+     "listChanged": true
+    }
+   },
+   "serverInfo": {
+    "name": "Figma MCP Server",
+    "version": "0.5.1"
+   }
+  },
+  "tools": [
+   {
+    "name": "get_figma_data",
+    "description": "Get comprehensive Figma file data including layout, content, visuals, and component information",
+    "inputSchema": {
+     "type": "object",
+     "properties": {
+      "fileKey": {
+       "type": "string",
+       "description": "The key of the Figma file to fetch, often found in a provided URL like figma.com/(file|design)/<fileKey>/..."
+      },
+      "nodeId": {
+       "type": "string",
+       "description": "The ID of the node to fetch, often found as URL parameter node-id=<nodeId>, always use if provided"
+      },
+      "depth": {
+       "type": "number",
+       "description": "OPTIONAL. Do NOT use unless explicitly requested by the user. Controls how many levels deep to traverse the node tree."
+      }
+     },
+     "required": [
+      "fileKey"
+     ],
+     "additionalProperties": false,
+     "$schema": "http://json-schema.org/draft-07/schema#"
+    }
+   },
+   {
+    "name": "download_figma_images",
+    "description": "Download SVG and PNG images used in a Figma file based on the IDs of image or icon nodes",
+    "inputSchema": {
+     "type": "object",
+     "properties": {
+      "fileKey": {
+       "type": "string",
+       "pattern": "^[a-zA-Z0-9]+$",
+       "description": "The key of the Figma file containing the images"
+      },
+      "nodes": {
+       "type": "array",
+       "items": {
+        "type": "object",
+        "properties": {
+         "nodeId": {
+          "type": "string",
+          "pattern": "^\\d+:\\d+$",
+          "description": "The ID of the Figma image node to fetch, formatted as 1234:5678"
+         },
+         "imageRef": {
+          "type": "string",
+          "description": "If a node has an imageRef fill, you must include this variable. Leave blank when downloading Vector SVG images."
+         },
+         "fileName": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_.-]+$",
+          "description": "The local name for saving the fetched file, including extension. Either png or svg."
+         },
+         "needsCropping": {
+          "type": "boolean",
+          "description": "Whether this image needs cropping based on its transform matrix"
+         },
+         "cropTransform": {
+          "type": "array",
+          "items": {
+           "type": "array",
+           "items": {
+            "type": "number"
+           }
+          },
+          "description": "Figma transform matrix for image cropping"
+         },
+         "requiresImageDimensions": {
+          "type": "boolean",
+          "description": "Whether this image requires dimension information for CSS variables"
+         },
+         "filenameSuffix": {
+          "type": "string",
+          "description": "Suffix to add to filename for unique cropped images, provided in the Figma data (e.g., 'abc123')"
+         }
+        },
+        "required": [
+         "nodeId",
+         "fileName"
+        ],
+        "additionalProperties": false
+       },
+       "description": "The nodes to fetch as images"
+      },
+      "pngScale": {
+       "type": "number",
+       "exclusiveMinimum": 0,
+       "default": 2,
+       "description": "Export scale for PNG images. Optional, defaults to 2 if not specified. Affects PNG images only."
+      },
+      "localPath": {
+       "type": "string",
+       "description": "The absolute path to the directory where images are stored in the project. If the directory does not exist, it will be created. The format of this path should respect the directory format of the operating system you are running on. Don't use any special character escaping in the path name either."
+      }
+     },
+     "required": [
+      "fileKey",
+      "nodes",
+      "localPath"
+     ],
+     "additionalProperties": false,
+     "$schema": "http://json-schema.org/draft-07/schema#"
+    }
+   }
+  ],
+  "pages": 1,
+  "error": null,
+  "stderr_tail": "",
+  "done": true,
+  "status": "ok"
+ },
+ {
+  "server": "figma",
+  "pkg": "figma-developer-mcp",
+  "registry": "npm",
+  "version": "0.6.1",
+  "published": "2025-09-23T16:43:43.205Z",
+  "pinned_before": "2025-09-25",
+  "probed_at": "2026-10-05T18:51:37.243368+00:00",
+  "installed": {
+   "resolved_version": "0.6.1"
+  },
+  "initialize": {
+   "protocolVersion": "2025-06-18",
+   "capabilities": {
+    "tools": {
+     "listChanged": true
+    }
+   },
+   "serverInfo": {
+    "name": "Figma MCP Server",
+    "version": "0.6.1"
+   }
+  },
+  "tools": [
+   {
+    "name": "get_figma_data",
+    "description": "Get comprehensive Figma file data including layout, content, visuals, and component information",
+    "inputSchema": {
+     "type": "object",
+     "properties": {
+      "fileKey": {
+       "type": "string",
+       "description": "The key of the Figma file to fetch, often found in a provided URL like figma.com/(file|design)/<fileKey>/..."
+      },
+      "nodeId": {
+       "type": "string",
+       "description": "The ID of the node to fetch, often found as URL parameter node-id=<nodeId>, always use if provided"
+      },
+      "depth": {
+       "type": "number",
+       "description": "OPTIONAL. Do NOT use unless explicitly requested by the user. Controls how many levels deep to traverse the node tree."
+      }
+     },
+     "required": [
+      "fileKey"
+     ],
+     "additionalProperties": false,
+     "$schema": "http://json-schema.org/draft-07/schema#"
+    }
+   },
+   {
+    "name": "download_figma_images",
+    "description": "Download SVG and PNG images used in a Figma file based on the IDs of image or icon nodes",
+    "inputSchema": {
+     "type": "object",
+     "properties": {
+      "fileKey": {
+       "type": "string",
+       "pattern": "^[a-zA-Z0-9]+$",
+       "description": "The key of the Figma file containing the images"
+      },
+      "nodes": {
+       "type": "array",
+       "items": {
+        "type": "object",
+        "properties": {
+         "nodeId": {
+          "type": "string",
+          "pattern": "^I?\\d+:\\d+(?:;\\d+:\\d+)*$",
+          "description": "The ID of the Figma image node to fetch, formatted as 1234:5678"
+         },
+         "imageRef": {
+          "type": "string",
+          "description": "If a node has an imageRef fill, you must include this variable. Leave blank when downloading Vector SVG images."
+         },
+         "fileName": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_.-]+\\.(png|svg)$",
+          "description": "The local name for saving the fetched file, including extension. Either png or svg."
+         },
+         "needsCropping": {
+          "type": "boolean",
+          "description": "Whether this image needs cropping based on its transform matrix"
+         },
+         "cropTransform": {
+          "type": "array",
+          "items": {
+           "type": "array",
+           "items": {
+            "type": "number"
+           }
+          },
+          "description": "Figma transform matrix for image cropping"
+         },
+         "requiresImageDimensions": {
+          "type": "boolean",
+          "description": "Whether this image requires dimension information for CSS variables"
+         },
+         "filenameSuffix": {
+          "type": "string",
+          "description": "Suffix to add to filename for unique cropped images, provided in the Figma data (e.g., 'abc123')"
+         }
+        },
+        "required": [
+         "nodeId",
+         "fileName"
+        ],
+        "additionalProperties": false
+       },
+       "description": "The nodes to fetch as images"
+      },
+      "pngScale": {
+       "type": "number",
+       "exclusiveMinimum": 0,
+       "default": 2,
+       "description": "Export scale for PNG images. Optional, defaults to 2 if not specified. Affects PNG images only."
+      },
+      "localPath": {
+       "type": "string",
+       "description": "The absolute path to the directory where images are stored in the project. If the directory does not exist, it will be created. The format of this path should respect the directory format of the operating system you are running on. Don't use any special character escaping in the path name either."
+      }
+     },
+     "required": [
+      "fileKey",
+      "nodes",
+      "localPath"
+     ],
+     "additionalProperties": false,
+     "$schema": "http://json-schema.org/draft-07/schema#"
+    }
+   }
+  ],
+  "pages": 1,
+  "error": null,
+  "stderr_tail": "",
+  "done": true,
+  "status": "ok"
+ },
+ {
+  "server": "figma",
+  "pkg": "figma-developer-mcp",
+  "registry": "npm",
+  "version": "0.6.6",
+  "published": "2026-03-04T20:26:55.830Z",
+  "pinned_before": "2026-03-06",
+  "probed_at": "2026-10-05T18:51:42.744823+00:00",
+  "installed": {
+   "resolved_version": "0.6.6"
+  },
+  "initialize": {
+   "protocolVersion": "2025-06-18",
+   "capabilities": {
+    "tools": {
+     "listChanged": true
+    }
+   },
+   "serverInfo": {
+    "name": "Figma MCP Server",
+    "version": "0.6.6",
+    "description": "Gives AI coding agents access to Figma design data, providing layout, styling, and content information for implementing designs."
+   }
+  },
+  "tools": [
+   {
+    "name": "get_figma_data",
+    "title": "Get Figma Data",
+    "description": "Get comprehensive Figma file data including layout, content, visuals, and component information",
+    "inputSchema": {
+     "type": "object",
+     "properties": {
+      "fileKey": {
+       "type": "string",
+       "pattern": "^[a-zA-Z0-9]+$",
+       "description": "The key of the Figma file to fetch, often found in a provided URL like figma.com/(file|design)/<fileKey>/..."
+      },
+      "nodeId": {
+       "type": "string",
+       "pattern": "^I?\\d+[:|-]\\d+(?:;\\d+[:|-]\\d+)*$",
+       "description": "The ID of the node to fetch, often found as URL parameter node-id=<nodeId>, always use if provided. Use format '1234:5678' or 'I5666:180910;1:10515;1:10336' for multiple nodes."
+      },
+      "depth": {
+       "type": "number",
+       "description": "OPTIONAL. Do NOT use unless explicitly requested by the user. Controls how many levels deep to traverse the node tree."
+      }
+     },
+     "required": [
+      "fileKey"
+     ],
+     "additionalProperties": false,
+     "$schema": "http://json-schema.org/draft-07/schema#"
+    },
+    "annotations": {
+     "readOnlyHint": true
+    },
+    "execution": {
+     "taskSupport": "forbidden"
+    }
+   },
+   {
+    "name": "download_figma_images",
+    "title": "Download Figma Images",
+    "description": "Download SVG and PNG images used in a Figma file based on the IDs of image or icon nodes",
+    "inputSchema": {
+     "type": "object",
+     "properties": {
+      "fileKey": {
+       "type": "string",
+       "pattern": "^[a-zA-Z0-9]+$",
+       "description": "The key of the Figma file containing the images"
+      },
+      "nodes": {
+       "type": "array",
+       "items": {
+        "type": "object",
+        "properties": {
+         "nodeId": {
+          "type": "string",
+          "pattern": "^I?\\d+[:|-]\\d+(?:;\\d+[:|-]\\d+)*$",
+          "description": "The ID of the Figma image node to fetch, formatted as 1234:5678"
+         },
+         "imageRef": {
+          "type": "string",
+          "description": "If a node has an imageRef fill, you must include this variable. Leave blank when downloading Vector SVG images."
+         },
+         "fileName": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_.-]+\\.(png|svg)$",
+          "description": "The local name for saving the fetched file, including extension. Either png or svg."
+         },
+         "needsCropping": {
+          "type": "boolean",
+          "description": "Whether this image needs cropping based on its transform matrix"
+         },
+         "cropTransform": {
+          "type": "array",
+          "items": {
+           "type": "array",
+           "items": {
+            "type": "number"
+           }
+          },
+          "description": "Figma transform matrix for image cropping"
+         },
+         "requiresImageDimensions": {
+          "type": "boolean",
+          "description": "Whether this image requires dimension information for CSS variables"
+         },
+         "filenameSuffix": {
+          "type": "string",
+          "description": "Suffix to add to filename for unique cropped images, provided in the Figma data (e.g., 'abc123')"
+         }
+        },
+        "required": [
+         "nodeId",
+         "fileName"
+        ],
+        "additionalProperties": false
+       },
+       "description": "The nodes to fetch as images"
+      },
+      "pngScale": {
+       "type": "number",
+       "exclusiveMinimum": 0,
+       "default": 2,
+       "description": "Export scale for PNG images. Optional, defaults to 2 if not specified. Affects PNG images only."
+      },
+      "localPath": {
+       "type": "string",
+       "description": "The absolute path to the directory where images are stored in the project. If the directory does not exist, it will be created. The format of this path should respect the directory format of the operating system you are running on. Don't use any special character escaping in the path name either."
+      }
+     },
+     "required": [
+      "fileKey",
+      "nodes",
+      "localPath"
+     ],
+     "additionalProperties": false,
+     "$schema": "http://json-schema.org/draft-07/schema#"
+    },
+    "annotations": {
+     "openWorldHint": true
+    },
+    "execution": {
+     "taskSupport": "forbidden"
+    }
+   }
+  ],
+  "pages": 1,
+  "error": null,
+  "stderr_tail": "",
+  "done": true,
+  "status": "ok"
+ },
+ {
+  "server": "figma",
+  "pkg": "figma-developer-mcp",
+  "registry": "npm",
+  "version": "0.8.1",
+  "published": "2026-04-07T05:10:21.350Z",
+  "pinned_before": "2026-04-09",
+  "probed_at": "2026-10-05T18:51:45.046233+00:00",
+  "installed": {
+   "resolved_version": "0.8.1"
+  },
+  "initialize": {
+   "protocolVersion": "2025-06-18",
+   "capabilities": {
+    "tools": {
+     "listChanged": true
+    }
+   },
+   "serverInfo": {
+    "name": "Figma MCP Server",
+    "version": "0.8.1",
+    "description": "Gives AI coding agents access to Figma design data, providing layout, styling, and content information for implementing designs."
+   }
+  },
+  "tools": [
+   {
+    "name": "get_figma_data",
+    "title": "Get Figma Data",
+    "description": "Get comprehensive Figma file data including layout, content, visuals, and component information",
+    "inputSchema": {
+     "type": "object",
+     "properties": {
+      "fileKey": {
+       "type": "string",
+       "pattern": "^[a-zA-Z0-9]+$",
+       "description": "The key of the Figma file to fetch, often found in a provided URL like figma.com/(file|design)/<fileKey>/..."
+      },
+      "nodeId": {
+       "type": "string",
+       "pattern": "^I?\\d+[:|-]\\d+(?:;\\d+[:|-]\\d+)*$",
+       "description": "The ID of the node to fetch, often found as URL parameter node-id=<nodeId>, always use if provided. Use format '1234:5678' or 'I5666:180910;1:10515;1:10336' for multiple nodes."
+      },
+      "depth": {
+       "type": "number",
+       "description": "OPTIONAL. Do NOT use unless explicitly requested by the user. Controls how many levels deep to traverse the node tree."
+      }
+     },
+     "required": [
+      "fileKey"
+     ],
+     "additionalProperties": false,
+     "$schema": "http://json-schema.org/draft-07/schema#"
+    },
+    "annotations": {
+     "readOnlyHint": true
+    },
+    "execution": {
+     "taskSupport": "forbidden"
+    }
+   },
+   {
+    "name": "download_figma_images",
+    "title": "Download Figma Images",
+    "description": "Download SVG and PNG images used in a Figma file based on the IDs of image or icon nodes. Images will be saved relative to the server's image directory: /tmp/mcpsandbox",
+    "inputSchema": {
+     "type": "object",
+     "properties": {
+      "fileKey": {
+       "type": "string",
+       "pattern": "^[a-zA-Z0-9]+$",
+       "description": "The key of the Figma file containing the images"
+      },
+      "nodes": {
+       "type": "array",
+       "items": {
+        "type": "object",
+        "properties": {
+         "nodeId": {
+          "type": "string",
+          "pattern": "^I?\\d+[:|-]\\d+(?:;\\d+[:|-]\\d+)*$",
+          "description": "The ID of the Figma image node to fetch, formatted as 1234:5678"
+         },
+         "imageRef": {
+          "type": "string",
+          "description": "If a node has an imageRef fill, you must include this variable. Leave blank when downloading Vector SVG images or animated GIFs (use gifRef instead)."
+         },
+         "gifRef": {
+          "type": "string",
+          "description": "If a node has a gifRef fill (animated GIF), you must include this variable to download the animated GIF. When gifRef is present in the Figma data, use it instead of imageRef to get the animated file rather than a static snapshot."
+         },
+         "fileName": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_.-]+\\.(png|svg|gif)$",
+          "description": "The local name for saving the fetched file, including extension. png, svg, or gif."
+         },
+         "needsCropping": {
+          "type": "boolean",
+          "description": "Whether this image needs cropping based on its transform matrix"
+         },
+         "cropTransform": {
+          "type": "array",
+          "items": {
+           "type": "array",
+           "items": {
+            "type": "number"
+           }
+          },
+          "description": "Figma transform matrix for image cropping"
+         },
+         "requiresImageDimensions": {
+          "type": "boolean",
+          "description": "Whether this image requires dimension information for CSS variables"
+         },
+         "filenameSuffix": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]+$",
+          "description": "Suffix to add to filename for unique cropped images, provided in the Figma data (e.g., 'abc123')"
+         }
+        },
+        "required": [
+         "nodeId",
+         "fileName"
+        ],
+        "additionalProperties": false
+       },
+       "description": "The nodes to fetch as images"
+      },
+      "pngScale": {
+       "type": "number",
+       "exclusiveMinimum": 0,
+       "default": 2,
+       "description": "Export scale for PNG images. Optional, defaults to 2 if not specified. Affects PNG images only."
+      },
+      "localPath": {
+       "type": "string",
+       "description": "The path to the directory where images should be saved, relative to the project root. If the directory does not exist, it will be created. Use forward slashes for path separators (e.g., 'public/images' or 'assets/icons')."
+      }
+     },
+     "required": [
+      "fileKey",
+      "nodes",
+      "localPath"
+     ],
+     "additionalProperties": false,
+     "$schema": "http://json-schema.org/draft-07/schema#"
+    },
+    "annotations": {
+     "openWorldHint": true
+    },
+    "execution": {
+     "taskSupport": "forbidden"
+    }
+   }
+  ],
+  "pages": 1,
+  "error": null,
+  "stderr_tail": "",
+  "done": true,
+  "status": "ok"
+ },
+ {
+  "server": "figma",
+  "pkg": "figma-developer-mcp",
+  "registry": "npm",
+  "version": "0.11.0",
+  "published": "2026-04-20T21:12:38.833Z",
+  "pinned_before": "2026-04-22",
+  "probed_at": "2026-10-05T18:51:49.548276+00:00",
+  "installed": {
+   "resolved_version": "0.11.0"
+  },
+  "initialize": {
+   "protocolVersion": "2025-06-18",
+   "capabilities": {
+    "tools": {
+     "listChanged": true
+    }
+   },
+   "serverInfo": {
+    "name": "Figma MCP Server",
+    "version": "0.11.0",
+    "description": "Gives AI coding agents access to Figma design data, providing layout, styling, and content information for implementing designs."
+   }
+  },
+  "tools": [
+   {
+    "name": "get_figma_data",
+    "title": "Get Figma Data",
+    "description": "Get comprehensive Figma file data including layout, content, visuals, and component information",
+    "inputSchema": {
+     "type": "object",
+     "properties": {
+      "fileKey": {
+       "type": "string",
+       "pattern": "^[a-zA-Z0-9]+$",
+       "description": "The key of the Figma file to fetch, often found in a provided URL like figma.com/(file|design)/<fileKey>/..."
+      },
+      "nodeId": {
+       "type": "string",
+       "pattern": "^I?\\d+[:|-]\\d+(?:;\\d+[:|-]\\d+)*$",
+       "description": "The ID of the node to fetch, often found as URL parameter node-id=<nodeId>, always use if provided. Use format '1234:5678' for a standard node, or 'I5666:180910;1:10515;1:10336' for a deeply nested instance node (the semicolon-joined path represents the instance override chain \u2014 it's still a single node ID, not multiple nodes)."
+      },
+      "depth": {
+       "type": "number",
+       "description": "OPTIONAL. Do NOT use unless explicitly requested by the user. Controls how many levels deep to traverse the node tree."
+      }
+     },
+     "required": [
+      "fileKey"
+     ],
+     "additionalProperties": false,
+     "$schema": "http://json-schema.org/draft-07/schema#"
+    },
+    "annotations": {
+     "readOnlyHint": true
+    },
+    "execution": {
+     "taskSupport": "forbidden"
+    }
+   },
+   {
+    "name": "download_figma_images",
+    "title": "Download Figma Images",
+    "description": "Download SVG and PNG images used in a Figma file based on the IDs of image or icon nodes. Images will be saved relative to the server's image directory: /tmp/mcpsandbox",
+    "inputSchema": {
+     "type": "object",
+     "properties": {
+      "fileKey": {
+       "type": "string",
+       "pattern": "^[a-zA-Z0-9]+$",
+       "description": "The key of the Figma file containing the images"
+      },
+      "nodes": {
+       "type": "array",
+       "items": {
+        "type": "object",
+        "properties": {
+         "nodeId": {
+          "type": "string",
+          "pattern": "^I?\\d+[:|-]\\d+(?:;\\d+[:|-]\\d+)*$",
+          "description": "The ID of the Figma image node to fetch, formatted as 1234:5678"
+         },
+         "imageRef": {
+          "type": "string",
+          "description": "If a node has an imageRef fill, you must include this variable. Leave blank when downloading Vector SVG images or animated GIFs (use gifRef instead)."
+         },
+         "gifRef": {
+          "type": "string",
+          "description": "If a node has a gifRef fill (animated GIF), you must include this variable to download the animated GIF. When gifRef is present in the Figma data, use it instead of imageRef to get the animated file rather than a static snapshot."
+         },
+         "fileName": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_.-]+\\.(png|svg|gif)$",
+          "description": "The local name for saving the fetched file, including extension. png, svg, or gif."
+         },
+         "needsCropping": {
+          "type": "boolean",
+          "description": "Whether this image needs cropping based on its transform matrix"
+         },
+         "cropTransform": {
+          "type": "array",
+          "items": {
+           "type": "array",
+           "items": {
+            "type": "number"
+           }
+          },
+          "description": "Figma transform matrix for image cropping"
+         },
+         "requiresImageDimensions": {
+          "type": "boolean",
+          "description": "Whether this image requires dimension information for CSS variables"
+         },
+         "filenameSuffix": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]+$",
+          "description": "Suffix to add to filename for unique cropped images, provided in the Figma data (e.g., 'abc123')"
+         }
+        },
+        "required": [
+         "nodeId",
+         "fileName"
+        ],
+        "additionalProperties": false
+       },
+       "description": "The nodes to fetch as images"
+      },
+      "pngScale": {
+       "type": "number",
+       "exclusiveMinimum": 0,
+       "default": 2,
+       "description": "Export scale for PNG images. Optional, defaults to 2 if not specified. Affects PNG images only."
+      },
+      "localPath": {
+       "type": "string",
+       "description": "The path to the directory where images should be saved, relative to the project root. If the directory does not exist, it will be created. Use forward slashes for path separators (e.g., 'public/images' or 'assets/icons')."
+      }
+     },
+     "required": [
+      "fileKey",
+      "nodes",
+      "localPath"
+     ],
+     "additionalProperties": false,
+     "$schema": "http://json-schema.org/draft-07/schema#"
+    },
+    "annotations": {
+     "openWorldHint": true
+    },
+    "execution": {
+     "taskSupport": "forbidden"
+    }
+   }
+  ],
+  "pages": 1,
+  "error": null,
+  "stderr_tail": "Usage telemetry enabled. Disable: FRAMELINK_TELEMETRY=off or DO_NOT_TRACK=1\n",
+  "done": true,
+  "status": "ok"
+ },
+ {
+  "server": "figma",
+  "pkg": "figma-developer-mcp",
+  "registry": "npm",
+  "version": "0.13.2",
+  "published": "2026-06-18T16:38:53.910Z",
+  "pinned_before": "2026-06-20",
+  "probed_at": "2026-10-05T18:52:00.621279+00:00",
+  "installed": {
+   "resolved_version": "0.13.2"
+  },
+  "initialize": {
+   "protocolVersion": "2025-06-18",
+   "capabilities": {
+    "tools": {
+     "listChanged": true
+    }
+   },
+   "serverInfo": {
+    "name": "Figma MCP Server",
+    "version": "0.13.2",
+    "description": "Gives AI coding agents access to Figma design data, providing layout, styling, and content information for implementing designs."
+   }
+  },
+  "tools": [
+   {
+    "name": "get_figma_data",
+    "title": "Get Figma Data",
+    "description": "Get comprehensive Figma file data including layout, content, visuals, and component information",
+    "inputSchema": {
+     "type": "object",
+     "properties": {
+      "fileKey": {
+       "type": "string",
+       "pattern": "^[a-zA-Z0-9]+$",
+       "description": "The key of the Figma file to fetch, often found in a provided URL like figma.com/(file|design)/<fileKey>/..."
+      },
+      "nodeId": {
+       "type": "string",
+       "pattern": "^I?\\d+[:|-]\\d+(?:;\\d+[:|-]\\d+)*$",
+       "description": "The ID of the node to fetch, often found as URL parameter node-id=<nodeId>, always use if provided. Use format '1234:5678' for a standard node, or 'I5666:180910;1:10515;1:10336' for a deeply nested instance node (the semicolon-joined path represents the instance override chain \u2014 it's still a single node ID, not multiple nodes)."
+      },
+      "depth": {
+       "type": "number",
+       "description": "OPTIONAL. Do NOT use unless explicitly requested by the user. Controls how many levels deep to traverse the node tree."
+      }
+     },
+     "required": [
+      "fileKey"
+     ],
+     "additionalProperties": false,
+     "$schema": "http://json-schema.org/draft-07/schema#"
+    },
+    "annotations": {
+     "readOnlyHint": true
+    },
+    "execution": {
+     "taskSupport": "forbidden"
+    }
+   },
+   {
+    "name": "download_figma_images",
+    "title": "Download Figma Images",
+    "description": "Download SVG and PNG images used in a Figma file based on the IDs of image or icon nodes. Images will be saved relative to the server's image directory: /tmp/mcpsandbox",
+    "inputSchema": {
+     "type": "object",
+     "properties": {
+      "fileKey": {
+       "type": "string",
+       "pattern": "^[a-zA-Z0-9]+$",
+       "description": "The key of the Figma file containing the images"
+      },
+      "nodes": {
+       "type": "array",
+       "items": {
+        "type": "object",
+        "properties": {
+         "nodeId": {
+          "type": "string",
+          "pattern": "^I?\\d+[:|-]\\d+(?:;\\d+[:|-]\\d+)*$",
+          "description": "The ID of the Figma image node to fetch, formatted as 1234:5678"
+         },
+         "imageRef": {
+          "type": "string",
+          "description": "If a node has an imageRef fill, you must include this variable. Leave blank when downloading Vector SVG images or animated GIFs (use gifRef instead), or when an IMAGE fill is present without an imageRef \u2014 in that case the node is rendered as PNG via nodeId."
+         },
+         "gifRef": {
+          "type": "string",
+          "description": "If a node has a gifRef fill (animated GIF), you must include this variable to download the animated GIF. When gifRef is present in the Figma data, use it instead of imageRef to get the animated file rather than a static snapshot."
+         },
+         "fileName": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_.-]+\\.(png|svg|gif)$",
+          "description": "The local name for saving the fetched file, including extension. png, svg, or gif."
+         },
+         "needsCropping": {
+          "type": "boolean",
+          "description": "Whether this image needs cropping based on its transform matrix"
+         },
+         "cropTransform": {
+          "type": "array",
+          "items": {
+           "type": "array",
+           "items": {
+            "type": "number"
+           }
+          },
+          "description": "Figma transform matrix for image cropping"
+         },
+         "requiresImageDimensions": {
+          "type": "boolean",
+          "description": "Whether this image requires dimension information for CSS variables"
+         },
+         "filenameSuffix": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]+$",
+          "description": "Suffix to add to filename for unique cropped images, provided in the Figma data (e.g., 'abc123')"
+         }
+        },
+        "required": [
+         "nodeId",
+         "fileName"
+        ],
+        "additionalProperties": false
+       },
+       "description": "The nodes to fetch as images"
+      },
+      "pngScale": {
+       "type": "number",
+       "exclusiveMinimum": 0,
+       "default": 2,
+       "description": "Export scale for PNG images. Optional, defaults to 2 if not specified. Affects PNG images only."
+      },
+      "localPath": {
+       "type": "string",
+       "description": "The directory to save images in. Provide a path relative to the server's image directory (e.g., 'public/images' or 'assets/icons'). Either separator works. Absolute paths are accepted only if they point inside the image directory. The directory is created if missing."
+      }
+     },
+     "required": [
+      "fileKey",
+      "nodes",
+      "localPath"
+     ],
+     "additionalProperties": false,
+     "$schema": "http://json-schema.org/draft-07/schema#"
+    },
+    "annotations": {
+     "openWorldHint": true
+    },
+    "execution": {
+     "taskSupport": "forbidden"
+    }
+   }
+  ],
+  "pages": 1,
+  "error": null,
+  "stderr_tail": "Usage telemetry enabled. Disable: FRAMELINK_TELEMETRY=off or DO_NOT_TRACK=1\nWarning: --image-dir not set; download_figma_images will save under the server's cwd (/tmp/mcpsandbox). MCP clients often launch the server outside your project root \u2014 set IMAGE_DIR or pass --image-dir to make this explicit.\n",
+  "done": true,
+  "status": "ok"
+ }
+]

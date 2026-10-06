@@ -1,0 +1,25 @@
+server,from,to,tool,proposed_code,rationale
+filesystem,2026.7.4,2026.7.10,read_media_file,C2 capability expansion,"Was 'an image or audio file'; now any file type, returned as an embedded resource. Same tool name, same schema."
+azure,0.5.3,0.5.11,search,C1 cosmetic,Reworded; same list/get/query capability.
+azure,1.0.2,2.0.5,foundry,C2 capability expansion,"Was listing and managing; now read, create, modify Models, Agents and Evaluation workflows."
+azure,1.0.2,2.0.5,storage,C2 capability expansion,"Now creates storage accounts and containers, uploads files, and covers tables."
+supabase,0.9.0,0.13.0,apply_migration,C1s safety guidance added,"Adds confirmation note and forbids server-file reads / OS commands via SQL."
+supabase,0.9.0,0.13.0,execute_sql,C1s safety guidance added,Same guardrail text as apply_migration.
+kubernetes,2.9.6,3.1.0,exec_in_pod,C1s safety guidance added,"Command must be an argv array; runs without a shell. The 'shell' parameter was removed in the same release."
+sentry,0.27.0,0.32.0,analyze_issue_with_seer,C1s safety guidance added,Narrows when the agent should call it.
+sentry,0.32.0,0.37.0,update_issue,C1 cosmetic,Rewritten with examples; capability unchanged.
+heroku,0.0.1,1.0.1,deploy_to_heroku,C1 cosmetic,Text extended; same capability.
+heroku,1.0.1,1.0.3,deploy_one_off_dyno,C1 cosmetic,Compressed wording; same capability.
+heroku,1.0.1,1.0.3,pg_psql,C1 cosmetic,Compressed wording; same capability.
+heroku,1.0.1,1.0.3,rename_app,C1 cosmetic,Compressed wording.
+firecrawl,3.10.3,3.20.2,firecrawl_search,C1 cosmetic,Operator table added.
+firecrawl,3.20.2,3.22.2,firecrawl_monitor_create,C2 capability expansion,Monitors can now watch search results (queries) as well as pages.
+firecrawl,3.20.2,3.22.2,firecrawl_parse,C2 capability expansion,Adds a hosted-mode two-call upload flow alongside local file reads.
+firecrawl,3.22.2,3.23.9,firecrawl_check_crawl_status,C1s safety guidance added,States it only reads job state.
+firecrawl,3.22.2,3.23.9,firecrawl_interact,C1s safety guidance added,"Now discloses that code runs as Bash, Python or Node and that actions can have persistent side effects. Code parameter already existed; destructiveHint still false."
+firecrawl,3.22.2,3.23.9,firecrawl_monitor_create,C1s safety guidance added,States it schedules network checks and can send email/webhook notifications.
+firecrawl,3.22.2,3.23.9,firecrawl_monitor_get,C1s safety guidance added,States it does not run or modify the monitor.
+firecrawl,3.22.2,3.23.9,firecrawl_parse,C1 cosmetic,Rewritten; lists supported formats.
+firecrawl,3.23.9,3.27.3,firecrawl_agent,C1 cosmetic,Rewritten usage guidance.
+firecrawl,3.23.9,3.27.3,firecrawl_agent_status,C1 cosmetic,Timing guidance added.
+firecrawl,3.23.9,3.27.3,firecrawl_feedback,C2 capability expansion,Adds an 'alexandria' session mode with new fields.

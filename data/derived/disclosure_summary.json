@@ -1,0 +1,258 @@
+{
+ "hint_flip_disclosure": {
+  "not mentioned": 9,
+  "hints mentioned generally": 2,
+  "no notes published": 1
+ },
+ "hold_changes": 1017,
+ "hold_change_disclosure": {
+  "no notes published": 338,
+  "not mentioned": 470,
+  "tool named": 104,
+  "hints mentioned generally": 105
+ },
+ "hold_pairs": 90,
+ "hold_pair_disclosure": {
+  "no notes": 38,
+  "none mentioned": 25,
+  "some mentioned": 14,
+  "all mentioned": 13
+ },
+ "by_server": {
+  "azure": {
+   "not mentioned": 117,
+   "tool named": 60,
+   "hints mentioned generally": 88
+  },
+  "browserbase": {
+   "no notes published": 4
+  },
+  "context7": {
+   "no notes published": 3,
+   "tool named": 7,
+   "not mentioned": 1
+  },
+  "everything": {
+   "not mentioned": 58
+  },
+  "figma": {
+   "tool named": 2,
+   "not mentioned": 4
+  },
+  "filesystem": {
+   "no notes published": 2,
+   "not mentioned": 33
+  },
+  "firecrawl": {
+   "no notes published": 22,
+   "not mentioned": 47,
+   "tool named": 8
+  },
+  "git": {
+   "not mentioned": 40
+  },
+  "heroku": {
+   "not mentioned": 6
+  },
+  "hubspot": {
+   "no notes published": 7
+  },
+  "kubernetes": {
+   "not mentioned": 36,
+   "tool named": 8,
+   "hints mentioned generally": 7
+  },
+  "memory": {
+   "not mentioned": 24
+  },
+  "notion": {
+   "no notes published": 50,
+   "not mentioned": 22,
+   "hints mentioned generally": 10
+  },
+  "playwright": {
+   "not mentioned": 75,
+   "tool named": 17
+  },
+  "sentry": {
+   "no notes published": 97
+  },
+  "sequential-thinking": {
+   "not mentioned": 7
+  },
+  "stripe": {
+   "no notes published": 47
+  },
+  "supabase": {
+   "no notes published": 98,
+   "tool named": 2
+  },
+  "time": {
+   "no notes published": 8
+  }
+ },
+ "key_changes": [
+  {
+   "server": "filesystem",
+   "from": "2026.1.14",
+   "to": "2026.7.4",
+   "tool": "move_file",
+   "detail": "destructiveHint: False->True (riskier)",
+   "notes_versions": "2026.7.4 2026.1.26",
+   "disclosure": "not mentioned"
+  },
+  {
+   "server": "filesystem",
+   "from": "2026.7.4",
+   "to": "2026.7.10",
+   "tool": "read_media_file",
+   "detail": "similarity 0.39",
+   "notes_versions": "2026.7.10",
+   "disclosure": "not mentioned"
+  },
+  {
+   "server": "azure",
+   "from": "0.5.11",
+   "to": "0.8.3",
+   "tool": "extension_azqr",
+   "detail": "idempotentHint: False->True (safer)",
+   "notes_versions": "0.8.3 0.8.2 0.8.1 0.8.0 0.7.0 0.6.0 0.5.13 0.5.12",
+   "disclosure": "hints mentioned generally"
+  },
+  {
+   "server": "azure",
+   "from": "0.5.11",
+   "to": "0.8.3",
+   "tool": "extension_azqr",
+   "detail": "openWorldHint: True->False (safer)",
+   "notes_versions": "0.8.3 0.8.2 0.8.1 0.8.0 0.7.0 0.6.0 0.5.13 0.5.12",
+   "disclosure": "hints mentioned generally"
+  },
+  {
+   "server": "azure",
+   "from": "1.0.2",
+   "to": "2.0.5",
+   "tool": "foundry",
+   "detail": "new action words: create,modify; similarity 0.63",
+   "notes_versions": "2.0.2 2.0.1 2.0.0 1.0.4 1.0.3",
+   "disclosure": "not mentioned"
+  },
+  {
+   "server": "azure",
+   "from": "1.0.2",
+   "to": "2.0.5",
+   "tool": "storage",
+   "detail": "new action words: create; similarity 0.38",
+   "notes_versions": "2.0.2 2.0.1 2.0.0 1.0.4 1.0.3",
+   "disclosure": "not mentioned"
+  },
+  {
+   "server": "sentry",
+   "from": "0.32.0",
+   "to": "0.37.0",
+   "tool": "update_issue",
+   "detail": "idempotentHint: True->False (riskier)",
+   "notes_versions": "",
+   "disclosure": "no notes published"
+  },
+  {
+   "server": "playwright",
+   "from": "0.0.36",
+   "to": "0.0.43",
+   "tool": "browser_close",
+   "detail": "readOnlyHint: True->False (riskier)",
+   "notes_versions": "0.0.43 0.0.42 0.0.41 0.0.40 0.0.39 0.0.38 0.0.37",
+   "disclosure": "not mentioned"
+  },
+  {
+   "server": "playwright",
+   "from": "0.0.36",
+   "to": "0.0.43",
+   "tool": "browser_close",
+   "detail": "destructiveHint: False->True (riskier)",
+   "notes_versions": "0.0.43 0.0.42 0.0.41 0.0.40 0.0.39 0.0.38 0.0.37",
+   "disclosure": "not mentioned"
+  },
+  {
+   "server": "playwright",
+   "from": "0.0.36",
+   "to": "0.0.43",
+   "tool": "browser_hover",
+   "detail": "readOnlyHint: True->False (riskier)",
+   "notes_versions": "0.0.43 0.0.42 0.0.41 0.0.40 0.0.39 0.0.38 0.0.37",
+   "disclosure": "not mentioned"
+  },
+  {
+   "server": "playwright",
+   "from": "0.0.36",
+   "to": "0.0.43",
+   "tool": "browser_hover",
+   "detail": "destructiveHint: False->True (riskier)",
+   "notes_versions": "0.0.43 0.0.42 0.0.41 0.0.40 0.0.39 0.0.38 0.0.37",
+   "disclosure": "not mentioned"
+  },
+  {
+   "server": "playwright",
+   "from": "0.0.36",
+   "to": "0.0.43",
+   "tool": "browser_navigate_back",
+   "detail": "readOnlyHint: True->False (riskier)",
+   "notes_versions": "0.0.43 0.0.42 0.0.41 0.0.40 0.0.39 0.0.38 0.0.37",
+   "disclosure": "not mentioned"
+  },
+  {
+   "server": "playwright",
+   "from": "0.0.36",
+   "to": "0.0.43",
+   "tool": "browser_navigate_back",
+   "detail": "destructiveHint: False->True (riskier)",
+   "notes_versions": "0.0.43 0.0.42 0.0.41 0.0.40 0.0.39 0.0.38 0.0.37",
+   "disclosure": "not mentioned"
+  },
+  {
+   "server": "playwright",
+   "from": "0.0.36",
+   "to": "0.0.43",
+   "tool": "browser_resize",
+   "detail": "readOnlyHint: True->False (riskier)",
+   "notes_versions": "0.0.43 0.0.42 0.0.41 0.0.40 0.0.39 0.0.38 0.0.37",
+   "disclosure": "not mentioned"
+  },
+  {
+   "server": "playwright",
+   "from": "0.0.36",
+   "to": "0.0.43",
+   "tool": "browser_resize",
+   "detail": "destructiveHint: False->True (riskier)",
+   "notes_versions": "0.0.43 0.0.42 0.0.41 0.0.40 0.0.39 0.0.38 0.0.37",
+   "disclosure": "not mentioned"
+  },
+  {
+   "server": "firecrawl",
+   "from": "3.20.2",
+   "to": "3.22.2",
+   "tool": "firecrawl_monitor_create",
+   "detail": "new action words: write; similarity 0.77",
+   "notes_versions": "3.21.4",
+   "disclosure": "not mentioned"
+  },
+  {
+   "server": "firecrawl",
+   "from": "3.20.2",
+   "to": "3.22.2",
+   "tool": "firecrawl_parse",
+   "detail": "new action words: command,run; similarity 0.55",
+   "notes_versions": "3.21.4",
+   "disclosure": "tool named"
+  },
+  {
+   "server": "firecrawl",
+   "from": "3.23.9",
+   "to": "3.27.3",
+   "tool": "firecrawl_feedback",
+   "detail": "new action words: refund; similarity 0.44",
+   "notes_versions": "3.25.0",
+   "disclosure": "not mentioned"
+  }
+ ]
+}

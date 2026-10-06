@@ -1,0 +1,11 @@
+{
+ "stripe/0.3.0": "Release is a thin stdio proxy to Stripe's hosted server (mcp.stripe.com); the package defines no tools itself. Not measurable offline. Probe failed (missing module).",
+ "stripe/0.3.1": "Remote proxy to mcp.stripe.com (host not reachable from sandbox). Tool definitions live on Stripe's server, not in the release.",
+ "stripe/0.3.2": "Remote proxy to mcp.stripe.com; process exited before initialize.",
+ "stripe/0.3.3": "Remote proxy to mcp.stripe.com (host not reachable from sandbox).",
+ "heroku/1.2.6": "Release does not start on Node 22: extensionless ESM import of '@modelcontextprotocol/sdk/dist/esm/server/mcp'.",
+ "heroku/1.2.8": "Same broken import as 1.2.6 (also fails with SDK 1.29.0).",
+ "heroku/1.2.10": "Same broken import as 1.2.6.",
+ "sentry/0.2.0": "Library-only release: no bin or main entry point, so there is no server to start.",
+ "firecrawl/3.1.2": "Dependencies unresolvable under date pinning: requires mcp-proxy ^6.5.1, first published 2026-05-20, after this release's own publish date."
+}

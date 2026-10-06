@@ -1,0 +1,291 @@
+{
+ "400.47.0": {
+  "tag": "cli%400.47.0",
+  "date": "2026-10-05T13:38:37Z",
+  "text": "New Features \u2728 Cli Add replay download command by @gggritso in #1392 Add dsn list command by @betegon in #1365 Add feedback spam command by @betegon in #1372 Add feedback unresolve command by @betegon in #1369 Add feedback resolve command by @betegon in #1366 Other (search) Split search_events into dataset-specific tools by @sentry-junior in #1374 Bug Fixes \ud83d\udc1b Cli Validate repository list responses by @betegon in #1364 Preserve a 401 on the final request attempt by @betegon in #1370 Other (api) Accept null legacy event context by @betegon in #1353 (cloudflare) Upload built Worker and SPA assets by @BYK in #1400 Internal Changes \ud83d\udd27 Update SDK to v11.1.0 and migrate tags to attributes by @JPeer264 in #1347 Other Install CLI nightlies from Toolkit GHCR by @BYK in #1403 Test the exact production Worker version before promotion by @BYK in #1399 Move Cloudflare token to protected production environment by @BYK in #1394 Publish Toolkit CLI nightlies to GHCR by @BYK in #1393 Restore CLI changelog with automatic workspace notes by @BYK in #1362 Restore guarded MCP production deployment by @BYK in #1359 Regenerate CLI skill files for 0.47.0 by @BYK in #1360",
+  "url": "https://github.com/getsentry/sentry-mcp/releases/tag/cli%400.47.0"
+ },
+ "400.46.0": {
+  "tag": "cli%400.46.0",
+  "date": "2026-10-01T17:20:54Z",
+  "text": "0.46.0 New Features \u2728 Move the CLI and its documentation to getsentry/toolkit , preserving their Git history. Stable installers now fetch exact cli@ releases from Toolkit, with a legacy fallback only when Toolkit returns 404, in #1354 . Configure Toolkit to publish the CLI binaries, npm package, Homebrew formula, and website in #1354 . Bug Fixes \ud83d\udc1b Keep CLI typechecking offline and support the ignored API schema in fresh checkouts in #1320 . Parse compact GitHub release responses, skip prerelease tags for stable installations, and preserve setup and upgrade compatibility in #1320 . Silence Seer errors on self-hosted instances without suppressing SaaS telemetry in getsentry/cli#1651 . Keep the v3 migration shim working for a release named new in #1320 . Documentation \ud83d\udcda Point the CLI website's GitHub link to Toolkit in #1358 .",
+  "url": "https://github.com/getsentry/sentry-mcp/releases/tag/cli%400.46.0"
+ },
+ "0.42.0": {
+  "tag": "0.42.0",
+  "date": "2026-09-25T14:43:49Z",
+  "text": "",
+  "url": "https://github.com/getsentry/sentry-mcp/releases/tag/0.42.0"
+ },
+ "0.41.0": {
+  "tag": "0.41.0",
+  "date": "2026-09-25T10:35:19Z",
+  "text": "",
+  "url": "https://github.com/getsentry/sentry-mcp/releases/tag/0.41.0"
+ },
+ "0.40.0": {
+  "tag": "0.40.0",
+  "date": "2026-09-24T13:46:27Z",
+  "text": "",
+  "url": "https://github.com/getsentry/sentry-mcp/releases/tag/0.40.0"
+ },
+ "0.39.0": {
+  "tag": "0.39.0",
+  "date": "2026-08-27T06:47:34Z",
+  "text": "",
+  "url": "https://github.com/getsentry/sentry-mcp/releases/tag/0.39.0"
+ },
+ "0.38.0": {
+  "tag": "0.38.0",
+  "date": "2026-08-26T06:46:24Z",
+  "text": "",
+  "url": "https://github.com/getsentry/sentry-mcp/releases/tag/0.38.0"
+ },
+ "0.37.0": {
+  "tag": "0.37.0",
+  "date": "2026-07-02T19:17:30Z",
+  "text": "",
+  "url": "https://github.com/getsentry/sentry-mcp/releases/tag/0.37.0"
+ },
+ "0.36.0": {
+  "tag": "0.36.0",
+  "date": "2026-06-08T19:45:26Z",
+  "text": "",
+  "url": "https://github.com/getsentry/sentry-mcp/releases/tag/0.36.0"
+ },
+ "0.35.0": {
+  "tag": "0.35.0",
+  "date": "2026-05-21T19:58:21Z",
+  "text": "",
+  "url": "https://github.com/getsentry/sentry-mcp/releases/tag/0.35.0"
+ },
+ "0.34.0": {
+  "tag": "0.34.0",
+  "date": "2026-05-20T22:14:28Z",
+  "text": "",
+  "url": "https://github.com/getsentry/sentry-mcp/releases/tag/0.34.0"
+ },
+ "0.33.0": {
+  "tag": "0.33.0",
+  "date": "2026-04-26T04:03:25Z",
+  "text": "",
+  "url": "https://github.com/getsentry/sentry-mcp/releases/tag/0.33.0"
+ },
+ "0.32.0": {
+  "tag": "0.32.0",
+  "date": "2026-04-14T16:30:18Z",
+  "text": "",
+  "url": "https://github.com/getsentry/sentry-mcp/releases/tag/0.32.0"
+ },
+ "0.31.0": {
+  "tag": "0.31.0",
+  "date": "2026-03-27T17:45:32Z",
+  "text": "",
+  "url": "https://github.com/getsentry/sentry-mcp/releases/tag/0.31.0"
+ },
+ "0.30.0": {
+  "tag": "0.30.0",
+  "date": "2026-03-18T15:47:54Z",
+  "text": "",
+  "url": "https://github.com/getsentry/sentry-mcp/releases/tag/0.30.0"
+ },
+ "0.29.0": {
+  "tag": "0.29.0",
+  "date": "2026-01-26T21:10:53Z",
+  "text": "",
+  "url": "https://github.com/getsentry/sentry-mcp/releases/tag/0.29.0"
+ },
+ "0.28.0": {
+  "tag": "0.28.0",
+  "date": "2026-01-21T19:54:11Z",
+  "text": "",
+  "url": "https://github.com/getsentry/sentry-mcp/releases/tag/0.28.0"
+ },
+ "0.27.0": {
+  "tag": "0.27.0",
+  "date": "2026-01-19T18:12:00Z",
+  "text": "",
+  "url": "https://github.com/getsentry/sentry-mcp/releases/tag/0.27.0"
+ },
+ "0.26.0": {
+  "tag": "0.26.0",
+  "date": "2025-12-18T22:24:27Z",
+  "text": "",
+  "url": "https://github.com/getsentry/sentry-mcp/releases/tag/0.26.0"
+ },
+ "0.25.0": {
+  "tag": "0.25.0",
+  "date": "2025-12-17T21:18:19Z",
+  "text": "",
+  "url": "https://github.com/getsentry/sentry-mcp/releases/tag/0.25.0"
+ },
+ "0.24.0": {
+  "tag": "0.24.0",
+  "date": "2025-12-03T19:34:04Z",
+  "text": "",
+  "url": "https://github.com/getsentry/sentry-mcp/releases/tag/0.24.0"
+ },
+ "0.23.1": {
+  "tag": "0.23.1",
+  "date": "2025-11-24T17:58:01Z",
+  "text": "",
+  "url": "https://github.com/getsentry/sentry-mcp/releases/tag/0.23.1"
+ },
+ "0.23.0": {
+  "tag": "0.23.0",
+  "date": "2025-11-20T22:51:02Z",
+  "text": "",
+  "url": "https://github.com/getsentry/sentry-mcp/releases/tag/0.23.0"
+ },
+ "0.22.0": {
+  "tag": "0.22.0",
+  "date": "2025-11-19T16:20:38Z",
+  "text": "",
+  "url": "https://github.com/getsentry/sentry-mcp/releases/tag/0.22.0"
+ },
+ "0.21.0": {
+  "tag": "0.21.0",
+  "date": "2025-11-05T17:47:32Z",
+  "text": "",
+  "url": "https://github.com/getsentry/sentry-mcp/releases/tag/0.21.0"
+ },
+ "0.20.0": {
+  "tag": "0.20.0",
+  "date": "2025-10-29T21:02:47Z",
+  "text": "",
+  "url": "https://github.com/getsentry/sentry-mcp/releases/tag/0.20.0"
+ },
+ "0.19.0": {
+  "tag": "0.19.0",
+  "date": "2025-10-28T16:58:10Z",
+  "text": "",
+  "url": "https://github.com/getsentry/sentry-mcp/releases/tag/0.19.0"
+ },
+ "0.18.0": {
+  "tag": "0.18.0",
+  "date": "2025-09-07T16:26:04Z",
+  "text": "",
+  "url": "https://github.com/getsentry/sentry-mcp/releases/tag/0.18.0"
+ },
+ "0.17.1": {
+  "tag": "0.17.1",
+  "date": "2025-07-24T17:17:42Z",
+  "text": "",
+  "url": "https://github.com/getsentry/sentry-mcp/releases/tag/0.17.1"
+ },
+ "0.17.0": {
+  "tag": "0.17.0",
+  "date": "2025-07-24T01:41:07Z",
+  "text": "",
+  "url": "https://github.com/getsentry/sentry-mcp/releases/tag/0.17.0"
+ },
+ "0.16.0": {
+  "tag": "0.16.0",
+  "date": "2025-07-10T22:07:05Z",
+  "text": "",
+  "url": "https://github.com/getsentry/sentry-mcp/releases/tag/0.16.0"
+ },
+ "0.15.0": {
+  "tag": "0.15.0",
+  "date": "2025-07-09T05:04:48Z",
+  "text": "",
+  "url": "https://github.com/getsentry/sentry-mcp/releases/tag/0.15.0"
+ },
+ "0.14.0": {
+  "tag": "0.14.0",
+  "date": "2025-07-09T03:15:55Z",
+  "text": "",
+  "url": "https://github.com/getsentry/sentry-mcp/releases/tag/0.14.0"
+ },
+ "0.13.0": {
+  "tag": "0.13.0",
+  "date": "2025-07-08T21:40:35Z",
+  "text": "",
+  "url": "https://github.com/getsentry/sentry-mcp/releases/tag/0.13.0"
+ },
+ "0.12.0": {
+  "tag": "0.12.0",
+  "date": "2025-06-13T17:30:16Z",
+  "text": "",
+  "url": "https://github.com/getsentry/sentry-mcp/releases/tag/0.12.0"
+ },
+ "0.11.0": {
+  "tag": "0.11.0",
+  "date": "2025-06-04T02:32:38Z",
+  "text": "",
+  "url": "https://github.com/getsentry/sentry-mcp/releases/tag/0.11.0"
+ },
+ "0.10.0": {
+  "tag": "0.10.0",
+  "date": "2025-05-27T20:50:43Z",
+  "text": "",
+  "url": "https://github.com/getsentry/sentry-mcp/releases/tag/0.10.0"
+ },
+ "0.9.0": {
+  "tag": "0.9.0",
+  "date": "2025-05-27T15:33:17Z",
+  "text": "",
+  "url": "https://github.com/getsentry/sentry-mcp/releases/tag/0.9.0"
+ },
+ "0.8.0": {
+  "tag": "0.8.0",
+  "date": "2025-05-22T20:12:24Z",
+  "text": "",
+  "url": "https://github.com/getsentry/sentry-mcp/releases/tag/0.8.0"
+ },
+ "0.7.1": {
+  "tag": "0.7.1",
+  "date": "2025-05-08T15:59:16Z",
+  "text": "",
+  "url": "https://github.com/getsentry/sentry-mcp/releases/tag/0.7.1"
+ },
+ "0.7.0": {
+  "tag": "0.7.0",
+  "date": "2025-05-08T00:39:28Z",
+  "text": "",
+  "url": "https://github.com/getsentry/sentry-mcp/releases/tag/0.7.0"
+ },
+ "0.6.0": {
+  "tag": "0.6.0",
+  "date": "2025-05-07T19:37:27Z",
+  "text": "",
+  "url": "https://github.com/getsentry/sentry-mcp/releases/tag/0.6.0"
+ },
+ "0.5.0": {
+  "tag": "0.5.0",
+  "date": "2025-05-06T18:39:22Z",
+  "text": "",
+  "url": "https://github.com/getsentry/sentry-mcp/releases/tag/0.5.0"
+ },
+ "0.4.0": {
+  "tag": "0.4.0",
+  "date": "2025-05-02T16:53:57Z",
+  "text": "",
+  "url": "https://github.com/getsentry/sentry-mcp/releases/tag/0.4.0"
+ },
+ "0.3.2": {
+  "tag": "0.3.2",
+  "date": "2025-05-01T21:23:39Z",
+  "text": "",
+  "url": "https://github.com/getsentry/sentry-mcp/releases/tag/0.3.2"
+ },
+ "0.3.1": {
+  "tag": "0.3.1",
+  "date": "2025-04-30T18:16:07Z",
+  "text": "",
+  "url": "https://github.com/getsentry/sentry-mcp/releases/tag/0.3.1"
+ },
+ "0.3.0": {
+  "tag": "0.3.0",
+  "date": "2025-04-30T00:00:55Z",
+  "text": "",
+  "url": "https://github.com/getsentry/sentry-mcp/releases/tag/0.3.0"
+ },
+ "0.2.1": {
+  "tag": "0.2.1",
+  "date": "2025-04-24T19:08:34Z",
+  "text": "",
+  "url": "https://github.com/getsentry/sentry-mcp/releases/tag/0.2.1"
+ },
+ "_source": "releases: getsentry/sentry-mcp"
+}

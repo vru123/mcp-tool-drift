@@ -1,0 +1,48 @@
+{
+ "releases_selected": 181,
+ "releases_probed_ok": 172,
+ "release_pairs": 152,
+ "pair_class_counts": {
+  "hold": 90,
+  "log": 18,
+  "none": 41,
+  "noise": 3
+ },
+ "pairs_substantive": 108,
+ "pairs_hold": 90,
+ "servers": 20,
+ "servers_with_hold_change": 19,
+ "servers_without_hold_change": [
+  "fetch"
+ ],
+ "hold_pairs_by_version_signal": {
+  "calver": 15,
+  "minor/patch": 40,
+  "major": 35
+ },
+ "hint_flips": 12,
+ "hint_flips_riskier": 10,
+ "hint_flip_servers": [
+  "azure",
+  "filesystem",
+  "playwright",
+  "sentry"
+ ],
+ "hint_introduced": 458,
+ "pairs_with_capability_expansion": 72,
+ "code_counts": {
+  "C4 new tool": 271,
+  "C1 cosmetic (review)": 211,
+  "C0 serialization noise": 101,
+  "C1 cosmetic": 411,
+  "C3b risk hint introduced": 458,
+  "C2 capability expansion": 109,
+  "C2b contract change": 161,
+  "C3a risk-hint flip": 12,
+  "C2 capability expansion (manual)": 6,
+  "C5 tool removed": 197,
+  "C1 cosmetic (manual)": 10,
+  "C1s safety guidance added (manual)": 8,
+  "C5 capability removed": 45
+ }
+}

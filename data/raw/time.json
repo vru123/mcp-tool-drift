@@ -1,0 +1,606 @@
+[
+ {
+  "server": "time",
+  "pkg": "mcp-server-time",
+  "registry": "pypi",
+  "version": "2025.7.1",
+  "published": "2025-07-01T18:32:18.434116Z",
+  "pinned_before": "2025-07-03",
+  "probed_at": "2026-10-05T18:41:45.487169+00:00",
+  "initialize": {
+   "protocolVersion": "2025-06-18",
+   "capabilities": {
+    "experimental": {},
+    "tools": {
+     "listChanged": false
+    }
+   },
+   "serverInfo": {
+    "name": "mcp-time",
+    "version": "1.10.1"
+   }
+  },
+  "tools": [
+   {
+    "name": "get_current_time",
+    "description": "Get current time in a specific timezones",
+    "inputSchema": {
+     "type": "object",
+     "properties": {
+      "timezone": {
+       "type": "string",
+       "description": "IANA timezone name (e.g., 'America/New_York', 'Europe/London'). Use 'UTC' as local timezone if no timezone provided by the user."
+      }
+     },
+     "required": [
+      "timezone"
+     ]
+    }
+   },
+   {
+    "name": "convert_time",
+    "description": "Convert time between timezones",
+    "inputSchema": {
+     "type": "object",
+     "properties": {
+      "source_timezone": {
+       "type": "string",
+       "description": "Source IANA timezone name (e.g., 'America/New_York', 'Europe/London'). Use 'UTC' as local timezone if no source timezone provided by the user."
+      },
+      "time": {
+       "type": "string",
+       "description": "Time to convert in 24-hour format (HH:MM)"
+      },
+      "target_timezone": {
+       "type": "string",
+       "description": "Target IANA timezone name (e.g., 'Asia/Tokyo', 'America/San_Francisco'). Use 'UTC' as local timezone if no target timezone provided by the user."
+      }
+     },
+     "required": [
+      "source_timezone",
+      "time",
+      "target_timezone"
+     ]
+    }
+   }
+  ],
+  "pages": 1,
+  "error": null,
+  "stderr_tail": "",
+  "done": true,
+  "status": "ok"
+ },
+ {
+  "server": "time",
+  "pkg": "mcp-server-time",
+  "registry": "pypi",
+  "version": "2025.8.4",
+  "published": "2025-08-04T14:52:28.891234Z",
+  "pinned_before": "2025-08-06",
+  "probed_at": "2026-10-05T18:41:45.716294+00:00",
+  "initialize": {
+   "protocolVersion": "2025-06-18",
+   "capabilities": {
+    "experimental": {},
+    "tools": {
+     "listChanged": false
+    }
+   },
+   "serverInfo": {
+    "name": "mcp-time",
+    "version": "1.12.3"
+   }
+  },
+  "tools": [
+   {
+    "name": "get_current_time",
+    "description": "Get current time in a specific timezones",
+    "inputSchema": {
+     "type": "object",
+     "properties": {
+      "timezone": {
+       "type": "string",
+       "description": "IANA timezone name (e.g., 'America/New_York', 'Europe/London'). Use 'UTC' as local timezone if no timezone provided by the user."
+      }
+     },
+     "required": [
+      "timezone"
+     ]
+    }
+   },
+   {
+    "name": "convert_time",
+    "description": "Convert time between timezones",
+    "inputSchema": {
+     "type": "object",
+     "properties": {
+      "source_timezone": {
+       "type": "string",
+       "description": "Source IANA timezone name (e.g., 'America/New_York', 'Europe/London'). Use 'UTC' as local timezone if no source timezone provided by the user."
+      },
+      "time": {
+       "type": "string",
+       "description": "Time to convert in 24-hour format (HH:MM)"
+      },
+      "target_timezone": {
+       "type": "string",
+       "description": "Target IANA timezone name (e.g., 'Asia/Tokyo', 'America/San_Francisco'). Use 'UTC' as local timezone if no target timezone provided by the user."
+      }
+     },
+     "required": [
+      "source_timezone",
+      "time",
+      "target_timezone"
+     ]
+    }
+   }
+  ],
+  "pages": 1,
+  "error": null,
+  "stderr_tail": "",
+  "done": true,
+  "status": "ok"
+ },
+ {
+  "server": "time",
+  "pkg": "mcp-server-time",
+  "registry": "pypi",
+  "version": "2025.9.24",
+  "published": "2025-09-25T20:52:24.669363Z",
+  "pinned_before": "2025-09-27",
+  "probed_at": "2026-10-05T18:41:46.143286+00:00",
+  "initialize": {
+   "protocolVersion": "2025-06-18",
+   "capabilities": {
+    "experimental": {},
+    "tools": {
+     "listChanged": false
+    }
+   },
+   "serverInfo": {
+    "name": "mcp-time",
+    "version": "1.15.0"
+   }
+  },
+  "tools": [
+   {
+    "name": "get_current_time",
+    "description": "Get current time in a specific timezones",
+    "inputSchema": {
+     "type": "object",
+     "properties": {
+      "timezone": {
+       "type": "string",
+       "description": "IANA timezone name (e.g., 'America/New_York', 'Europe/London'). Use 'UTC' as local timezone if no timezone provided by the user."
+      }
+     },
+     "required": [
+      "timezone"
+     ]
+    }
+   },
+   {
+    "name": "convert_time",
+    "description": "Convert time between timezones",
+    "inputSchema": {
+     "type": "object",
+     "properties": {
+      "source_timezone": {
+       "type": "string",
+       "description": "Source IANA timezone name (e.g., 'America/New_York', 'Europe/London'). Use 'UTC' as local timezone if no source timezone provided by the user."
+      },
+      "time": {
+       "type": "string",
+       "description": "Time to convert in 24-hour format (HH:MM)"
+      },
+      "target_timezone": {
+       "type": "string",
+       "description": "Target IANA timezone name (e.g., 'Asia/Tokyo', 'America/San_Francisco'). Use 'UTC' as local timezone if no target timezone provided by the user."
+      }
+     },
+     "required": [
+      "source_timezone",
+      "time",
+      "target_timezone"
+     ]
+    }
+   }
+  ],
+  "pages": 1,
+  "error": null,
+  "stderr_tail": "",
+  "done": true,
+  "status": "ok"
+ },
+ {
+  "server": "time",
+  "pkg": "mcp-server-time",
+  "registry": "pypi",
+  "version": "2025.9.25",
+  "published": "2025-09-25T21:25:55.292605Z",
+  "pinned_before": "2025-09-27",
+  "probed_at": "2026-10-05T18:41:50.551213+00:00",
+  "initialize": {
+   "protocolVersion": "2025-06-18",
+   "capabilities": {
+    "experimental": {},
+    "tools": {
+     "listChanged": false
+    }
+   },
+   "serverInfo": {
+    "name": "mcp-time",
+    "version": "1.15.0"
+   }
+  },
+  "tools": [
+   {
+    "name": "get_current_time",
+    "description": "Get current time in a specific timezones",
+    "inputSchema": {
+     "type": "object",
+     "properties": {
+      "timezone": {
+       "type": "string",
+       "description": "IANA timezone name (e.g., 'America/New_York', 'Europe/London'). Use 'UTC' as local timezone if no timezone provided by the user."
+      }
+     },
+     "required": [
+      "timezone"
+     ]
+    }
+   },
+   {
+    "name": "convert_time",
+    "description": "Convert time between timezones",
+    "inputSchema": {
+     "type": "object",
+     "properties": {
+      "source_timezone": {
+       "type": "string",
+       "description": "Source IANA timezone name (e.g., 'America/New_York', 'Europe/London'). Use 'UTC' as local timezone if no source timezone provided by the user."
+      },
+      "time": {
+       "type": "string",
+       "description": "Time to convert in 24-hour format (HH:MM)"
+      },
+      "target_timezone": {
+       "type": "string",
+       "description": "Target IANA timezone name (e.g., 'Asia/Tokyo', 'America/San_Francisco'). Use 'UTC' as local timezone if no target timezone provided by the user."
+      }
+     },
+     "required": [
+      "source_timezone",
+      "time",
+      "target_timezone"
+     ]
+    }
+   }
+  ],
+  "pages": 1,
+  "error": null,
+  "stderr_tail": "",
+  "done": true,
+  "status": "ok"
+ },
+ {
+  "server": "time",
+  "pkg": "mcp-server-time",
+  "registry": "pypi",
+  "version": "2026.1.26",
+  "published": "2026-01-27T09:25:56.820086Z",
+  "pinned_before": "2026-01-29",
+  "probed_at": "2026-10-05T18:41:50.668794+00:00",
+  "initialize": {
+   "protocolVersion": "2025-06-18",
+   "capabilities": {
+    "experimental": {},
+    "tools": {
+     "listChanged": false
+    }
+   },
+   "serverInfo": {
+    "name": "mcp-time",
+    "version": "1.26.0"
+   }
+  },
+  "tools": [
+   {
+    "name": "get_current_time",
+    "description": "Get current time in a specific timezones",
+    "inputSchema": {
+     "type": "object",
+     "properties": {
+      "timezone": {
+       "type": "string",
+       "description": "IANA timezone name (e.g., 'America/New_York', 'Europe/London'). Use 'UTC' as local timezone if no timezone provided by the user."
+      }
+     },
+     "required": [
+      "timezone"
+     ]
+    }
+   },
+   {
+    "name": "convert_time",
+    "description": "Convert time between timezones",
+    "inputSchema": {
+     "type": "object",
+     "properties": {
+      "source_timezone": {
+       "type": "string",
+       "description": "Source IANA timezone name (e.g., 'America/New_York', 'Europe/London'). Use 'UTC' as local timezone if no source timezone provided by the user."
+      },
+      "time": {
+       "type": "string",
+       "description": "Time to convert in 24-hour format (HH:MM)"
+      },
+      "target_timezone": {
+       "type": "string",
+       "description": "Target IANA timezone name (e.g., 'Asia/Tokyo', 'America/San_Francisco'). Use 'UTC' as local timezone if no target timezone provided by the user."
+      }
+     },
+     "required": [
+      "source_timezone",
+      "time",
+      "target_timezone"
+     ]
+    }
+   }
+  ],
+  "pages": 1,
+  "error": null,
+  "stderr_tail": "",
+  "done": true,
+  "status": "ok"
+ },
+ {
+  "server": "time",
+  "pkg": "mcp-server-time",
+  "registry": "pypi",
+  "version": "2026.6.4",
+  "published": "2026-06-04T01:22:42.580115Z",
+  "pinned_before": "2026-06-06",
+  "probed_at": "2026-10-05T18:41:50.778633+00:00",
+  "initialize": {
+   "protocolVersion": "2025-06-18",
+   "capabilities": {
+    "experimental": {},
+    "tools": {
+     "listChanged": false
+    }
+   },
+   "serverInfo": {
+    "name": "mcp-time",
+    "version": "1.27.2"
+   }
+  },
+  "tools": [
+   {
+    "name": "get_current_time",
+    "description": "Get current time in a specific timezone",
+    "inputSchema": {
+     "type": "object",
+     "properties": {
+      "timezone": {
+       "type": "string",
+       "description": "IANA timezone name (e.g., 'America/New_York', 'Europe/London'). Use 'UTC' as local timezone if no timezone provided by the user."
+      }
+     },
+     "required": [
+      "timezone"
+     ]
+    },
+    "annotations": {
+     "readOnlyHint": true,
+     "destructiveHint": false,
+     "idempotentHint": true,
+     "openWorldHint": false
+    }
+   },
+   {
+    "name": "convert_time",
+    "description": "Convert time between timezones",
+    "inputSchema": {
+     "type": "object",
+     "properties": {
+      "source_timezone": {
+       "type": "string",
+       "description": "Source IANA timezone name (e.g., 'America/New_York', 'Europe/London'). Use 'UTC' as local timezone if no source timezone provided by the user."
+      },
+      "time": {
+       "type": "string",
+       "description": "Time to convert in 24-hour format (HH:MM)"
+      },
+      "target_timezone": {
+       "type": "string",
+       "description": "Target IANA timezone name (e.g., 'Asia/Tokyo', 'America/San_Francisco'). Use 'UTC' as local timezone if no target timezone provided by the user."
+      }
+     },
+     "required": [
+      "source_timezone",
+      "time",
+      "target_timezone"
+     ]
+    },
+    "annotations": {
+     "readOnlyHint": true,
+     "destructiveHint": false,
+     "idempotentHint": true,
+     "openWorldHint": false
+    }
+   }
+  ],
+  "pages": 1,
+  "error": null,
+  "stderr_tail": "",
+  "done": true,
+  "status": "ok"
+ },
+ {
+  "server": "time",
+  "pkg": "mcp-server-time",
+  "registry": "pypi",
+  "version": "2026.7.10",
+  "published": "2026-07-10T03:31:04.803450Z",
+  "pinned_before": "2026-07-12",
+  "probed_at": "2026-10-05T18:41:53.551156+00:00",
+  "initialize": {
+   "protocolVersion": "2025-06-18",
+   "capabilities": {
+    "experimental": {},
+    "tools": {
+     "listChanged": false
+    }
+   },
+   "serverInfo": {
+    "name": "mcp-time",
+    "version": "1.28.1"
+   }
+  },
+  "tools": [
+   {
+    "name": "get_current_time",
+    "description": "Get current time in a specific timezone",
+    "inputSchema": {
+     "type": "object",
+     "properties": {
+      "timezone": {
+       "type": "string",
+       "description": "IANA timezone name (e.g., 'America/New_York', 'Europe/London'). Use 'UTC' as local timezone if no timezone provided by the user."
+      }
+     },
+     "required": [
+      "timezone"
+     ]
+    },
+    "annotations": {
+     "readOnlyHint": true,
+     "destructiveHint": false,
+     "idempotentHint": true,
+     "openWorldHint": false
+    }
+   },
+   {
+    "name": "convert_time",
+    "description": "Convert time between timezones",
+    "inputSchema": {
+     "type": "object",
+     "properties": {
+      "source_timezone": {
+       "type": "string",
+       "description": "Source IANA timezone name (e.g., 'America/New_York', 'Europe/London'). Use 'UTC' as local timezone if no source timezone provided by the user."
+      },
+      "time": {
+       "type": "string",
+       "description": "Time to convert in 24-hour format (HH:MM)"
+      },
+      "target_timezone": {
+       "type": "string",
+       "description": "Target IANA timezone name (e.g., 'Asia/Tokyo', 'America/San_Francisco'). Use 'UTC' as local timezone if no target timezone provided by the user."
+      }
+     },
+     "required": [
+      "source_timezone",
+      "time",
+      "target_timezone"
+     ]
+    },
+    "annotations": {
+     "readOnlyHint": true,
+     "destructiveHint": false,
+     "idempotentHint": true,
+     "openWorldHint": false
+    }
+   }
+  ],
+  "pages": 1,
+  "error": null,
+  "stderr_tail": "",
+  "done": true,
+  "status": "ok"
+ },
+ {
+  "server": "time",
+  "pkg": "mcp-server-time",
+  "registry": "pypi",
+  "version": "2026.8.18",
+  "published": "2026-08-18T16:06:24.385845Z",
+  "pinned_before": "2026-08-20",
+  "probed_at": "2026-10-05T18:41:54.312852+00:00",
+  "initialize": {
+   "protocolVersion": "2025-06-18",
+   "capabilities": {
+    "experimental": {},
+    "tools": {
+     "listChanged": false
+    }
+   },
+   "serverInfo": {
+    "name": "mcp-time",
+    "version": "1.29.0"
+   }
+  },
+  "tools": [
+   {
+    "name": "get_current_time",
+    "description": "Get current time in a specific timezone",
+    "inputSchema": {
+     "type": "object",
+     "properties": {
+      "timezone": {
+       "type": "string",
+       "description": "IANA timezone name (e.g., 'America/New_York', 'Europe/London'). Use 'UTC' as local timezone if no timezone provided by the user."
+      }
+     },
+     "required": [
+      "timezone"
+     ]
+    },
+    "annotations": {
+     "readOnlyHint": true,
+     "destructiveHint": false,
+     "idempotentHint": true,
+     "openWorldHint": false
+    }
+   },
+   {
+    "name": "convert_time",
+    "description": "Convert time between timezones",
+    "inputSchema": {
+     "type": "object",
+     "properties": {
+      "source_timezone": {
+       "type": "string",
+       "description": "Source IANA timezone name (e.g., 'America/New_York', 'Europe/London'). Use 'UTC' as local timezone if no source timezone provided by the user."
+      },
+      "time": {
+       "type": "string",
+       "description": "Time to convert in 24-hour format (HH:MM)"
+      },
+      "target_timezone": {
+       "type": "string",
+       "description": "Target IANA timezone name (e.g., 'Asia/Tokyo', 'America/San_Francisco'). Use 'UTC' as local timezone if no target timezone provided by the user."
+      }
+     },
+     "required": [
+      "source_timezone",
+      "time",
+      "target_timezone"
+     ]
+    },
+    "annotations": {
+     "readOnlyHint": true,
+     "destructiveHint": false,
+     "idempotentHint": true,
+     "openWorldHint": false
+    }
+   }
+  ],
+  "pages": 1,
+  "error": null,
+  "stderr_tail": "",
+  "done": true,
+  "status": "ok"
+ }
+]

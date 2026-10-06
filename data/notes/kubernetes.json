@@ -1,0 +1,591 @@
+{
+ "4.1.9": {
+  "tag": "v4.1.9",
+  "date": "2026-10-02T04:51:38Z",
+  "text": "exec_in_pod is now classified as a destructive tool, so not allowed under ALLOW_ONLY_NON_DESTRUCTIVE_TOOLS. @rr-paras-patel",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v4.1.9"
+ },
+ "4.1.8": {
+  "tag": "v4.1.8",
+  "date": "2026-09-29T18:04:18Z",
+  "text": "Start in degraded mode instead of crashing when kubeconfig has no current-context, so MCP initialize still succeeds and cluster tools return a clear configuration error ( #377 ).",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v4.1.8"
+ },
+ "4.1.7": {
+  "tag": "v4.1.7",
+  "date": "2026-09-14T01:02:59Z",
+  "text": "Bump js-yaml dependency.",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v4.1.7"
+ },
+ "4.1.6": {
+  "tag": "v4.1.6",
+  "date": "2026-08-31T15:52:58Z",
+  "text": "Bug fixes for specific tool calls and helm calls.",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v4.1.6"
+ },
+ "4.1.5": {
+  "tag": "v4.1.5",
+  "date": "2026-08-31T06:18:23Z",
+  "text": "Bug fixes for certain helm commands.",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v4.1.5"
+ },
+ "4.1.4": {
+  "tag": "v4.1.4",
+  "date": "2026-08-08T17:08:59Z",
+  "text": "Dependency bump for js-yaml.",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v4.1.4"
+ },
+ "4.1.3": {
+  "tag": "v4.1.3",
+  "date": "2026-08-07T19:27:02Z",
+  "text": "Dependency bump for express ( #360 ).",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v4.1.3"
+ },
+ "4.1.2": {
+  "tag": "v4.1.2",
+  "date": "2026-07-28T23:55:26Z",
+  "text": "Updating ALLOWED_TOOLS to fail early if misspelled tool in list. Thanks to @cyb3ralbert !",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v4.1.2"
+ },
+ "4.1.1": {
+  "tag": "v4.1.1",
+  "date": "2026-07-27T20:13:33Z",
+  "text": "Bugfix for kubectl_patch's patch_file argument.",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v4.1.1"
+ },
+ "4.1.0": {
+  "tag": "v4.1.0",
+  "date": "2026-07-26T03:09:31Z",
+  "text": "Bug fixes for shortflag quirks.",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v4.1.0"
+ },
+ "4.0.9": {
+  "tag": "v4.0.9",
+  "date": "2026-07-23T21:49:34Z",
+  "text": "Dependency bump.",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v4.0.9"
+ },
+ "4.0.8": {
+  "tag": "v4.0.8",
+  "date": "2026-07-23T19:04:48Z",
+  "text": "Updating SSE dns rebinding protection and adding support for exec_in_pod error outputs. Thanks to @KaloyanNaumov for the exec_in_pod updates.",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v4.0.8"
+ },
+ "4.0.7": {
+  "tag": "v4.0.7",
+  "date": "2026-07-18T18:47:24Z",
+  "text": "Add security.mcpAuthToken to the Helm chart and warn at install time when http/sse transport runs without authentication ( #348 ).",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v4.0.7"
+ },
+ "4.0.6": {
+  "tag": "v4.0.6",
+  "date": "2026-07-18T17:32:07Z",
+  "text": "Harden the kubectl/helm dangerous-flag guard against the attached short-flag token form ( #347 ).",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v4.0.6"
+ },
+ "4.0.5": {
+  "tag": "v4.0.5",
+  "date": "2026-07-18T17:15:28Z",
+  "text": "Restrict server-side path reads (filename/valuesFile) to the stdio transport in kubectl_apply, kubectl_delete, and Helm chart tools ( #346 )",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v4.0.5"
+ },
+ "4.0.4": {
+  "tag": "v4.0.4",
+  "date": "2026-07-15T17:46:59Z",
+  "text": "Readme cleanup: badges down to one line, replace Gemini CLI install directions with Codex ( #340 )",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v4.0.4"
+ },
+ "4.0.3": {
+  "tag": "v4.0.3",
+  "date": "2026-07-15T17:26:15Z",
+  "text": "Fix kubectl_get output: \"custom\" failing under shell-less execFileSync by unquoting the custom-columns argument ( #339 )",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v4.0.3"
+ },
+ "4.0.2": {
+  "tag": "v4.0.2",
+  "date": "2026-07-13T20:10:16Z",
+  "text": "Security hardening for remote (SSE / Streamable HTTP) deployments: restrict the kubectl_create filename and fromFile parameters \u2014 which resolve paths on the machine running the server \u2014 to the stdio transport, and add a fromFileContent parameter to populate ConfigMaps/Secrets from client-supplied content on any transport ( #332 ).",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v4.0.2"
+ },
+ "4.0.1": {
+  "tag": "v4.0.1",
+  "date": "2026-07-08T19:52:31Z",
+  "text": "Security fix: mask Kubernetes Secret values regardless of the resourceType syntax used to request them (e.g. secret/<name> ), closing a masking bypass in kubectl_get (GHSA-w23h-64x4-22h9).",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v4.0.1"
+ },
+ "4.0.0": {
+  "tag": "v4.0.0",
+  "date": "2026-07-08T19:32:22Z",
+  "text": "Security fix: guard the port_forward tool's argv against kubectl flag injection, closing the last unguarded exec path from the argument-injection report ( #328 ).",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v4.0.0"
+ },
+ "3.9.3": {
+  "tag": "v3.9.3",
+  "date": "2026-07-06T17:56:02Z",
+  "text": "Updating kubectl generic to take allNamespaces flag and release cleanup.",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v3.9.3"
+ },
+ "3.9.2": {
+  "tag": "v3.9.2",
+  "date": "2026-06-22T19:34:16Z",
+  "text": "Dependency version bump to remove protobuf 8.0.0 dependency.",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v3.9.2"
+ },
+ "3.9.1": {
+  "tag": "v3.9.1",
+  "date": "2026-06-11T19:05:25Z",
+  "text": "Updating version number returned from mcp server to match actual version number of release. Thanks to @apoorvdarshan",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v3.9.1"
+ },
+ "3.9.0": {
+  "tag": "v3.9.0",
+  "date": "2026-06-09T01:54:21Z",
+  "text": "Bug fixes and adding helm chart observability schema options. Thanks to @anthoai97 for the helm schema updates!",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v3.9.0"
+ },
+ "3.8.0": {
+  "tag": "v3.8.0",
+  "date": "2026-05-23T19:48:58Z",
+  "text": "Enabling DNS rebinding protection by default. See docs for how to disable if necessary for testing.",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v3.8.0"
+ },
+ "3.7.0": {
+  "tag": "v3.7.0",
+  "date": "2026-05-20T19:38:11Z",
+  "text": "kubectl_generic denylist for specific combinations of flags.",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v3.7.0"
+ },
+ "3.6.2": {
+  "tag": "v3.6.2",
+  "date": "2026-05-14T22:51:31Z",
+  "text": "Bumping opentelemetry/auto-instrumentations-node to 0.75.0.",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v3.6.2"
+ },
+ "3.6.1": {
+  "tag": "v3.6.1",
+  "date": "2026-05-14T21:15:33Z",
+  "text": "Pinning & updating opentelemetry dependencies.",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v3.6.1"
+ },
+ "3.6.0": {
+  "tag": "v3.6.0",
+  "date": "2026-05-14T17:48:17Z",
+  "text": "Bug fixes around env vars restricting tool calls.",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v3.6.0"
+ },
+ "3.5.1": {
+  "tag": "v3.5.1",
+  "date": "2026-05-03T03:45:05Z",
+  "text": "Bug fixes: Fixing port_forward to return correct mcp spec. Thanks to @voron for the fix!",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v3.5.1"
+ },
+ "3.5.0": {
+  "tag": "v3.5.0",
+  "date": "2026-04-07T18:53:19Z",
+  "text": "Dependency updates & port_forward updates.",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v3.5.0"
+ },
+ "3.4.0": {
+  "tag": "v3.4.0",
+  "date": "2026-03-27T18:08:49Z",
+  "text": "New kubectl_reconnect command and bug fixes: Add kubectl_reconnect to fix stale reconnects. Thanks to @BrunoChauvet ! Using constant time comparison for auth tokens. Thanks to @spidershield-contrib !",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v3.4.0"
+ },
+ "3.3.0": {
+  "tag": "v3.3.0",
+  "date": "2026-03-01T18:43:46Z",
+  "text": "New features and bug fixes: Adding OpenTelemetry distributed tracing support #264 Refactoring exec_in_pod to use kubectl #271 Adding writable AWS credentials volume #266 Thanks to @rr-paras-patel and Claude.",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v3.3.0"
+ },
+ "3.2.2": {
+  "tag": "v3.2.2",
+  "date": "2026-03-01T17:53:23Z",
+  "text": "Adding .zip to release in addition to .mcpb to support gemini CLI. Thansk to @tymorton !",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v3.2.2"
+ },
+ "3.2.1": {
+  "tag": "v3.2.1",
+  "date": "2026-02-19T04:03:38Z",
+  "text": "Updating status to be more accurate to kubectl response.",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v3.2.1"
+ },
+ "3.2.0": {
+  "tag": "v3.2.0",
+  "date": "2026-01-15T17:34:49Z",
+  "text": "Adding support for custom volumes in helm chart. Thanks to @smunukutla-mycarrier ! Adding X-MCP-AUTH as a simple authentication mechanism for server running in sse / streamable-http servers.",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v3.2.0"
+ },
+ "3.1.1": {
+  "tag": "v3.1.1",
+  "date": "2026-01-08T03:28:42Z",
+  "text": "Fixing required name for kubectl_get and kubectl_delete (not actually required).",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v3.1.1"
+ },
+ "3.1.0": {
+  "tag": "v3.1.0",
+  "date": "2026-01-07T21:36:47Z",
+  "text": "Updating @modelcontextprotocol/sdk to resolve dependabot issues.",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v3.1.0"
+ },
+ "3.0.5": {
+  "tag": "v3.0.5",
+  "date": "2025-12-28T04:02:16Z",
+  "text": "Adding tool annotations. Thanks to @triepod-ai !",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v3.0.5"
+ },
+ "3.0.4": {
+  "tag": "v3.0.4",
+  "date": "2025-12-18T01:19:15Z",
+  "text": "Update for TLS_VERIFY and CA_CERT. Thanks to @Konstantinov-Innokentii !",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v3.0.4"
+ },
+ "3.0.3": {
+  "tag": "v3.0.3",
+  "date": "2025-12-17T05:48:16Z",
+  "text": "Multiple bug fixes & improvements: Updates to helm charts - supporting custom init containers & removing an unsupported gcloud parameter. Thanks to @milvito ! Prioritize env vars (K8S_SERVER / K8S_TOKEN) over incluster credentials (providing env vars takes precedence if they are provided). Thanks to @ashlkv ! Allowing passing a CA certificate data via env var K8S_CA_DATA to allow for TLS verification. Thanks to @Konstantinov-Innokentii !",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v3.0.3"
+ },
+ "3.0.2": {
+  "tag": "v3.0.2",
+  "date": "2025-12-12T17:48:17Z",
+  "text": "Adding MCPError if kubectl patch receives a string instead of object.",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v3.0.2"
+ },
+ "3.0.1": {
+  "tag": "v3.0.1",
+  "date": "2025-12-06T00:43:18Z",
+  "text": "Helm chart publishing needed additional permissions for updated cd.yml publishing with npm trusted publishers.",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v3.0.1"
+ },
+ "3.0.0": {
+  "tag": "v3.0.0",
+  "date": "2025-12-06T00:30:04Z",
+  "text": "",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v3.0.0"
+ },
+ "2.9.9": {
+  "tag": "v2.9.9",
+  "date": "2025-12-01T18:12:06Z",
+  "text": "cd.yml fix for helm chart publishing error.",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v2.9.9"
+ },
+ "2.9.8": {
+  "tag": "v2.9.8",
+  "date": "2025-12-01T03:24:46Z",
+  "text": "Dependabot & bug fixes for exec_in_pod.",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v2.9.8"
+ },
+ "2.9.7": {
+  "tag": "v2.9.7",
+  "date": "2025-10-21T05:54:04Z",
+  "text": "Fix up bug in closing streamable-http servers. Thanks to @reckless-huang !",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v2.9.7"
+ },
+ "2.9.6": {
+  "tag": "v2.9.6",
+  "date": "2025-09-22T15:54:14Z",
+  "text": "Updating manifest.json for mcpb bundles.",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v2.9.6"
+ },
+ "2.9.5": {
+  "tag": "v2.9.5",
+  "date": "2025-09-18T19:32:06Z",
+  "text": "Updating .dxtignore to be .mcpbignore to reduce size of mcpb bundle.",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v2.9.5"
+ },
+ "2.9.4": {
+  "tag": "v2.9.4",
+  "date": "2025-09-17T19:58:50Z",
+  "text": "",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v2.9.4"
+ },
+ "2.9.3": {
+  "tag": "v2.9.3",
+  "date": "2025-09-16T17:33:02Z",
+  "text": "Adding readOnlyHint and destructiveHint to tool schemas.",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v2.9.3"
+ },
+ "2.9.2": {
+  "tag": "v2.9.2",
+  "date": "2025-09-16T16:58:25Z",
+  "text": "Updating manifest.json to include readOnlyHint and destructiveHint.",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v2.9.2"
+ },
+ "2.9.1": {
+  "tag": "v2.9.1",
+  "date": "2025-09-08T05:07:30Z",
+  "text": "Bugfix for parsing context names with special characters like @ and : . Thanks to @reckless-huang for this fix!",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v2.9.1"
+ },
+ "2.9.0": {
+  "tag": "v2.9.0",
+  "date": "2025-08-28T16:40:42Z",
+  "text": "Adding health & readiness endpoints /health and /ready for SSE & Streamable HTTP. Thanks to @rr-krupesh-savaliya ! Adding support for installing Helm charts using YAML manifests & updating node management. Thanks to @Himanshukrojha !",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v2.9.0"
+ },
+ "2.8.0": {
+  "tag": "v2.8.0",
+  "date": "2025-08-11T06:13:24Z",
+  "text": "Allowing context to be passed for all tools. Thanks to @jvitor03 !",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v2.8.0"
+ },
+ "2.7.0": {
+  "tag": "v2.7.0",
+  "date": "2025-08-02T00:59:13Z",
+  "text": "Adding Streamable HTTP transport.",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v2.7.0"
+ },
+ "2.6.0": {
+  "tag": "v2.6.0",
+  "date": "2025-07-29T21:44:46Z",
+  "text": "Secrets masking is enabled by default for kubectl get secrets commands. Thanks to @cybercuisine ! For more information, read the ADVANCED_README . To disable use env var MASK_SECRETS=false .",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v2.6.0"
+ },
+ "2.5.1": {
+  "tag": "v2.5.1",
+  "date": "2025-07-14T23:12:12Z",
+  "text": "Updating manifest.json for dxt format. Thanks @felixrieseberg !",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v2.5.1"
+ },
+ "2.5.0": {
+  "tag": "v2.5.0",
+  "date": "2025-07-04T04:40:05Z",
+  "text": "New Features: Adding SPAWN_MAX_BUFFER env var for buffers larger than 1MB (see #172 ). Adding ALLOW_ONLY_READONLY_TOOLS env var which is a more restrictive subset of tools than non-destructive. Also adding ALLOWED_TOOLS for users to customize an include list for tools (only allowing those tools in the include list). See #173 . Bug fixes: Removing optional keyword from exec_in_pod schema. See #177 . Thanks @anthonysr ! Misc: Changing all execSync to execFileSync . See #174 . Adding Citation.cff. Thanks @rr-paras-patel ! See #178 .",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v2.5.0"
+ },
+ "2.4.9": {
+  "tag": "v2.4.9",
+  "date": "2025-07-01T04:21:39Z",
+  "text": "DXT manifest.json updates for sane defaults.",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v2.4.9"
+ },
+ "2.4.8": {
+  "tag": "v2.4.8",
+  "date": "2025-07-01T04:15:08Z",
+  "text": "Fixing up user config so that dxt extension doesn't fail without user argument.",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v2.4.8"
+ },
+ "2.4.7": {
+  "tag": "v2.4.7",
+  "date": "2025-06-29T01:48:20Z",
+  "text": "Removing minikube binary from dxt package.",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v2.4.7"
+ },
+ "2.4.6": {
+  "tag": "v2.4.6",
+  "date": "2025-06-28T17:56:22Z",
+  "text": "Creating new dxt with long_description from #166",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v2.4.6"
+ },
+ "2.4.5": {
+  "tag": "v2.4.5",
+  "date": "2025-06-26T20:22:49Z",
+  "text": "Fixing up dxt release issue.",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v2.4.5"
+ },
+ "2.4.4": {
+  "tag": "v2.4.4",
+  "date": "2025-06-26T20:12:35Z",
+  "text": "Adding dxt generation to cd.yml",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v2.4.4"
+ },
+ "2.4.3": {
+  "tag": "v2.4.3",
+  "date": "2025-06-24T06:48:24Z",
+  "text": "What's Changed Add exec_in_pod tool for command execution in Kubernetes pods by @rr-paras-patel in #128 Feature/ping-support by @rr-paras-patel in #160 Remove Kubectl_list Tool Full Changelog : 2.4.2...v2.4.3",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v2.4.3"
+ },
+ "2.4.2": {
+  "tag": "v2.4.2",
+  "date": "2025-06-20T06:53:42Z",
+  "text": "Add MCP Troubleshoot/Diagnose Prompt Support",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v2.4.2"
+ },
+ "2.4.1": {
+  "tag": "v2.4.1",
+  "date": "2025-06-17T18:48:37Z",
+  "text": "Adding support for HOST variable when starting SSE transport.",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v2.4.1"
+ },
+ "2.4.0": {
+  "tag": "v2.4.0",
+  "date": "2025-06-17T04:57:16Z",
+  "text": "Updating docker container and required parameters for tool calls. Thanks to @kkambhat",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v2.4.0"
+ },
+ "2.3.1": {
+  "tag": "v2.3.1",
+  "date": "2025-06-11T21:37:55Z",
+  "text": "Upgrade @kubernetes/client-node dependency to v1.3.0.",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v2.3.1"
+ },
+ "2.3.0": {
+  "tag": "v2.3.0",
+  "date": "2025-06-05T23:55:39Z",
+  "text": "Bug Fixes for kubeconfig env loading",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v2.3.0"
+ },
+ "2.2.1": {
+  "tag": "v2.2.1",
+  "date": "2025-05-30T18:48:37Z",
+  "text": "Removing unnecessary esbuild from package.json",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v2.2.1"
+ },
+ "2.2.0": {
+  "tag": "v2.2.0",
+  "date": "2025-05-30T18:18:42Z",
+  "text": "Adding ability to pass kubeconfig in different ways (as string in yaml, json, custom kubeconfig_path, etc.). Thanks to @spo0nman !",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v2.2.0"
+ },
+ "2.1.1": {
+  "tag": "v2.1.1",
+  "date": "2025-05-30T18:00:08Z",
+  "text": "Fixing console logs that show errors in Claude Desktop. Thanks to @aliou",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v2.1.1"
+ },
+ "2.1.0": {
+  "tag": "v2.1.0",
+  "date": "2025-05-22T04:43:46Z",
+  "text": "Kubernetes MCP Server can now run inside a cluster (make sure container you run in also has kubectl installed). Thanks to @ajit-pendse for this feature!",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v2.1.0"
+ },
+ "2.0.0": {
+  "tag": "v2.0.0",
+  "date": "2025-05-21T04:16:11Z",
+  "text": "Complete refactor to use kubectl for most commands. Huge thanks to @rr-paras-patel !",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v2.0.0"
+ },
+ "1.6.2": {
+  "tag": "v1.6.2",
+  "date": "2025-05-07T05:01:59Z",
+  "text": "Fixing jsonpath-plus cve in previous version of kubenetes/client-node. Thanks to @tx-chen",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v1.6.2"
+ },
+ "1.6.1": {
+  "tag": "v1.6.1",
+  "date": "2025-04-29T05:33:16Z",
+  "text": "Changing list_pods result to return \"phase\" instead of \"status\" as described by this: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#pod-phase",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v1.6.1"
+ },
+ "1.6.0": {
+  "tag": "v1.6.0",
+  "date": "2025-04-19T16:02:10Z",
+  "text": "Adding config map get, update, delete support. Thanks to @rr-paras-patel !",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v1.6.0"
+ },
+ "1.5.0": {
+  "tag": "v1.5.0",
+  "date": "2025-04-18T16:04:01Z",
+  "text": "Adding describe service, update service, and delete service tools. Thanks to @barrycheng05 ! Adding describe node tool. Thanks to @osw282 !",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v1.5.0"
+ },
+ "1.4.0": {
+  "tag": "v1.4.0",
+  "date": "2025-04-15T18:17:40Z",
+  "text": "Adding create_service, update_deployment tools. Adding context management tools: list_context, set_context, get_context. Adding a ALLOW_ONLY_NON_DESTRUCTIVE_TOOLS flag that allows users to disable delete tools for the MCP server.",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v1.4.0"
+ },
+ "1.3.2": {
+  "tag": "v1.3.2",
+  "date": "2025-04-10T18:28:06Z",
+  "text": "Update to docker image to support awscli",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v1.3.2"
+ },
+ "1.3.1": {
+  "tag": "v1.3.1",
+  "date": "2025-04-10T15:25:41Z",
+  "text": "Fixing properties in helm charts & namespace return result",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v1.3.1"
+ },
+ "1.3.0": {
+  "tag": "v1.3.0",
+  "date": "2025-04-08T18:34:05Z",
+  "text": "Adding create configmap",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v1.3.0"
+ },
+ "1.2.0": {
+  "tag": "v1.2.0",
+  "date": "2025-04-02T16:32:24Z",
+  "text": "Added namespace and cronjob deletion.",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v1.2.0"
+ },
+ "1.1.0": {
+  "tag": "v1.1.0",
+  "date": "2025-03-28T18:06:49Z",
+  "text": "Adding cronjob creation, job listing and update deployment replicas.",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v1.1.0"
+ },
+ "1.0.1": {
+  "tag": "v1.0.1",
+  "date": "2025-03-26T18:02:11Z",
+  "text": "",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v1.0.1"
+ },
+ "1.0.0": {
+  "tag": "v1.0.0",
+  "date": "2025-03-26T00:14:14Z",
+  "text": "",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v1.0.0"
+ },
+ "0.4.0": {
+  "tag": "v0.4.0",
+  "date": "2025-03-24T16:36:03Z",
+  "text": "Adding SSE transport as a non-default option.",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v0.4.0"
+ },
+ "0.3.2": {
+  "tag": "v0.3.2",
+  "date": "2025-03-20T06:00:50Z",
+  "text": "Update readme and fix up docker latest image",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v0.3.2"
+ },
+ "0.3.1": {
+  "tag": "v0.3.1",
+  "date": "2025-03-20T01:36:00Z",
+  "text": "",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v0.3.1"
+ },
+ "0.3.0": {
+  "tag": "v0.3.0",
+  "date": "2025-03-18T17:33:31Z",
+  "text": "",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v0.3.0"
+ },
+ "0.2.5": {
+  "tag": "v0.2.5",
+  "date": "2025-03-17T17:20:17Z",
+  "text": "",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v0.2.5"
+ },
+ "0.2.4": {
+  "tag": "v0.2.4",
+  "date": "2025-03-17T08:10:08Z",
+  "text": "",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v0.2.4"
+ },
+ "0.2.3": {
+  "tag": "v0.2.3",
+  "date": "2025-03-17T07:53:14Z",
+  "text": "",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v0.2.3"
+ },
+ "0.2.2": {
+  "tag": "v0.2.2",
+  "date": "2025-03-17T07:41:45Z",
+  "text": "",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v0.2.2"
+ },
+ "0.2.1": {
+  "tag": "v0.2.1",
+  "date": "2025-03-17T07:34:45Z",
+  "text": "",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v0.2.1"
+ },
+ "0.2.0": {
+  "tag": "v0.2.0",
+  "date": "2025-03-17T07:27:16Z",
+  "text": "",
+  "url": "https://github.com/Flux159/mcp-server-kubernetes/releases/tag/v0.2.0"
+ },
+ "_source": "releases: Flux159/mcp-server-kubernetes"
+}

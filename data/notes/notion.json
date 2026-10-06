@@ -1,0 +1,9 @@
+{
+ "2.1.0": {
+  "tag": "v2.1.0",
+  "date": "2026-01-31T18:27:31Z",
+  "text": "What's changed Small fixes/cleanups to package files and README by @ksinder in #170 feat: Add tool annotations for improved LLM tool understanding by @bryankthompson in #169 fix: handle double-serialized JSON parameters from MCP clients by @pwarnock in #180 docs: add GitHub Copilot CLI installation instructions by @GeekTrainer in #190 fix: preserve const values and allow any property in page schemas by @danielostrow in #173 Proposal: Add an option to disable the authentication header by @piljaechae in #105 feat: Add retrieve database endpoint to OpenAPI spec by @ksinder in #195 New contributors @bryankthompson made their first contribution in #169 @pwarnock made their first contribution in #180 @GeekTrainer made their first contribution in #190 @danielostrow made their first contribution in #173 @piljaechae made their first contribution in #105 Links Full Changelog : v2.0.0...v2.1.0 NPM Package : https://www.npmjs.com/package/@notionhq/notion-mcp-server/v/2.1.0",
+  "url": "https://github.com/makenotion/notion-mcp-server/releases/tag/v2.1.0"
+ },
+ "_source": "releases: makenotion/notion-mcp-server"
+}

@@ -1,0 +1,111 @@
+{
+ "2026.8.31": {
+  "tag": "2026.8.31",
+  "date": "2026-08-31T20:34:32Z",
+  "text": "Release : v2026.8.31 Updated packages @modelcontextprotocol/server-filesystem@2026.8.31 @modelcontextprotocol/server-memory@2026.8.31 @modelcontextprotocol/server-sequential-thinking@2026.8.31 @modelcontextprotocol/server-everything@2026.8.31",
+  "url": "https://github.com/modelcontextprotocol/servers/releases/tag/2026.8.31"
+ },
+ "2026.8.18": {
+  "tag": "2026.8.18",
+  "date": "2026-08-18T16:16:12Z",
+  "text": "Release : v2026.8.18 Updated packages @modelcontextprotocol/server-everything@2026.8.18 mcp-server-time@2026.8.18 mcp-server-fetch@2026.8.18 mcp-server-git@2026.8.18",
+  "url": "https://github.com/modelcontextprotocol/servers/releases/tag/2026.8.18"
+ },
+ "2026.7.10": {
+  "tag": "2026.7.10",
+  "date": "2026-07-10T03:39:07Z",
+  "text": "Release : v2026.7.10 Updated packages @modelcontextprotocol/server-filesystem@2026.7.10 mcp-server-time@2026.7.10 mcp-server-fetch@2026.7.10 mcp-server-git@2026.7.10",
+  "url": "https://github.com/modelcontextprotocol/servers/releases/tag/2026.7.10"
+ },
+ "2026.7.4": {
+  "tag": "2026.7.4",
+  "date": "2026-07-04T23:05:56Z",
+  "text": "Release : v2026.7.4 Updated packages @modelcontextprotocol/server-everything@2026.7.4 @modelcontextprotocol/server-filesystem@2026.7.4 @modelcontextprotocol/server-sequential-thinking@2026.7.4 @modelcontextprotocol/server-memory@2026.7.4",
+  "url": "https://github.com/modelcontextprotocol/servers/releases/tag/2026.7.4"
+ },
+ "2026.1.26": {
+  "tag": "2026.1.26",
+  "date": "2026-01-27T12:11:26Z",
+  "text": "Release : v2026.1.26 Updated packages @modelcontextprotocol/server-everything@2026.1.26 @modelcontextprotocol/server-memory@2026.1.26 mcp-server-time@2026.1.26",
+  "url": "https://github.com/modelcontextprotocol/servers/releases/tag/2026.1.26"
+ },
+ "2026.1.14": {
+  "tag": "2026.1.14",
+  "date": "2026-01-14T16:35:35Z",
+  "text": "Release : v2026.1.14 Updated packages @modelcontextprotocol/server-everything@2026.1.14 @modelcontextprotocol/server-filesystem@2026.1.14 mcp-server-git@2026.1.14",
+  "url": "https://github.com/modelcontextprotocol/servers/releases/tag/2026.1.14"
+ },
+ "2025.12.18": {
+  "tag": "2025.12.18",
+  "date": "2025-12-18T16:33:28Z",
+  "text": "Release : v2025.12.18 Updated packages @modelcontextprotocol/server-sequential-thinking@2025.12.18 @modelcontextprotocol/server-everything@2025.12.18 @modelcontextprotocol/server-filesystem@2025.12.18 mcp-server-git@2025.12.18",
+  "url": "https://github.com/modelcontextprotocol/servers/releases/tag/2025.12.18"
+ },
+ "2025.11.25": {
+  "tag": "2025.11.25",
+  "date": "2025-11-25T19:03:57Z",
+  "text": "Release : v2025.11.25 Updated packages @modelcontextprotocol/server-sequential-thinking@2025.11.25 @modelcontextprotocol/server-everything@2025.11.25 @modelcontextprotocol/server-filesystem@2025.11.25 @modelcontextprotocol/server-memory@2025.11.25 mcp-server-git@2025.11.25",
+  "url": "https://github.com/modelcontextprotocol/servers/releases/tag/2025.11.25"
+ },
+ "2025.9.25": {
+  "tag": "2025.9.25",
+  "date": "2025-09-25T21:26:20Z",
+  "text": "Release : v2025.9.25 Updated packages @modelcontextprotocol/server-everything@2025.9.25 @modelcontextprotocol/server-memory@2025.9.25 mcp-server-git@2025.9.25 mcp-server-time@2025.9.25",
+  "url": "https://github.com/modelcontextprotocol/servers/releases/tag/2025.9.25"
+ },
+ "2025.8.4": {
+  "tag": "2025.8.4",
+  "date": "2025-08-05T09:16:01Z",
+  "text": "Release : v2025.8.4 Updated packages @modelcontextprotocol/server-everything@2025.8.4 @modelcontextprotocol/server-memory@2025.8.4 mcp-server-time@2025.8.4",
+  "url": "https://github.com/modelcontextprotocol/servers/releases/tag/2025.8.4"
+ },
+ "2025.7.1": {
+  "tag": "2025.7.1",
+  "date": "2025-07-01T18:32:42Z",
+  "text": "Release : v2025.7.1 Updated packages @modelcontextprotocol/server-everything@2025.7.1 @modelcontextprotocol/server-filesystem@2025.7.1 @modelcontextprotocol/server-sequential-thinking@2025.7.1 mcp-server-time@2025.7.1 mcp-server-git@2025.7.1",
+  "url": "https://github.com/modelcontextprotocol/servers/releases/tag/2025.7.1"
+ },
+ "2025.4.24": {
+  "tag": "2025.4.24",
+  "date": "2025-04-25T08:32:12Z",
+  "text": "Release : v2025.4.24 Updated packages @modelcontextprotocol/server-slack@2025.4.24 @modelcontextprotocol/server-everything@2025.4.24 @modelcontextprotocol/server-memory@2025.4.24 @modelcontextprotocol/server-gitlab@2025.4.24 @modelcontextprotocol/server-redis@2025.4.24 mcp-server-sqlite@2025.4.24",
+  "url": "https://github.com/modelcontextprotocol/servers/releases/tag/2025.4.24"
+ },
+ "2025.4.6": {
+  "tag": "2025.4.6",
+  "date": "2025-04-07T09:15:12Z",
+  "text": "Release : v2025.4.6 Updated packages @modelcontextprotocol/server-github@2025.4.6 @modelcontextprotocol/server-redis@2025.4.6 @modelcontextprotocol/server-gitlab@2025.4.6 @modelcontextprotocol/server-puppeteer@2025.4.6 mcp-server-fetch@2025.4.6",
+  "url": "https://github.com/modelcontextprotocol/servers/releases/tag/2025.4.6"
+ },
+ "2025.1.17": {
+  "tag": "2025.1.17",
+  "date": "2025-01-17T10:17:28Z",
+  "text": "Release : v2025.1.17 Updated packages @modelcontextprotocol/server-slack@2025.1.17 @modelcontextprotocol/server-github@2025.1.17 mcp-server-fetch@2025.1.17",
+  "url": "https://github.com/modelcontextprotocol/servers/releases/tag/2025.1.17"
+ },
+ "2025.1.14": {
+  "tag": "2025.1.14",
+  "date": "2025-01-14T03:08:47Z",
+  "text": "Release : v2025.1.14 Updated packages @modelcontextprotocol/server-aws-kb-retrieval@2025.1.14 @modelcontextprotocol/server-puppeteer@2025.1.14 @modelcontextprotocol/server-gdrive@2025.1.14 @modelcontextprotocol/server-github@2025.1.14 @modelcontextprotocol/server-filesystem@2025.1.14 @modelcontextprotocol/server-everything@2025.1.14 mcp-server-fetch@2025.1.14 mcp-server-sentry@2025.1.14 mcp-server-sqlite@2025.1.14 mcp-server-git@2025.1.14",
+  "url": "https://github.com/modelcontextprotocol/servers/releases/tag/2025.1.14"
+ },
+ "0.6.2": {
+  "tag": "python-servers-0.6.2",
+  "date": "2024-12-04T16:00:40Z",
+  "text": "What's Changed Fix deserialization of URL by @jackadamson in #177 fix(fetch): properly handles robots.txt by @SkywaveTM in #144 added missing main in mcp_server_sentry by @aliev in #182 New Contributors @SkywaveTM made their first contribution in #144 @aliev made their first contribution in #182 Full Changelog : python-servers-0.6.1...python-servers-0.6.2",
+  "url": "https://github.com/modelcontextprotocol/servers/releases/tag/python-servers-0.6.2"
+ },
+ "0.6.1": {
+  "tag": "python-servers-0.6.1",
+  "date": "2024-11-29T18:01:02Z",
+  "text": "Python Servers 0.6.1",
+  "url": "https://github.com/modelcontextprotocol/servers/releases/tag/python-servers-0.6.1"
+ },
+ "0.6.0": {
+  "tag": "typescript-servers-0.6.0",
+  "date": "2024-12-03T14:11:57Z",
+  "text": "What's Changed Fix deserialization of URL by @jackadamson in #177 Everart and thinking server by @Skirano in #93 servers: make tool call result spec compatible by @dsp-ant in #176 fix(fetch): properly handles robots.txt by @SkywaveTM in #144 New Contributors @davidgomes made their first contribution in #195 @sdairs made their first contribution in #196 @SkywaveTM made their first contribution in #144 @aliev made their first contribution in #182 @mishushakov made their first contribution in #175 Full Changelog : python-servers-0.6.1...typescript-servers-0.6.0",
+  "url": "https://github.com/modelcontextprotocol/servers/releases/tag/typescript-servers-0.6.0"
+ },
+ "_source": "releases: modelcontextprotocol/servers"
+}
